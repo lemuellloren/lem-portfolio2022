@@ -26,6 +26,13 @@ export const projects = {
   desc: "Here are some of my favorite projects that I've worked on.",
   projects: [
     {
+      title: 'Poplar Homes Owner Dashboard Renewal and Relisitng Product',
+      description:
+        "Poplar's owner dashboard software that owners can renew and relist their property stack used PostgreSQL, Express, React, and Node",
+      link: '',
+      github: ''
+    },
+    {
       title: 'Poplar Homes Engineering Careers',
       description:
         "Poplar's microsite for engineering department careers made with WordPress",
