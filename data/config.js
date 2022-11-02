@@ -35,7 +35,7 @@ export const projects = {
     {
       title: 'Poplar Homes Engineering Careers',
       description:
-        "Poplar's microsite for engineering department careers made with WordPress",
+        "Poplar's v1 and v2 microsite for engineering department careers made with WordPress using Divi",
       link: 'https://www.poplarhomes.com/engineeringcareers/',
       github: ''
     },
