@@ -47,31 +47,10 @@ export const projects = {
       github: ''
     },
     {
-      title: 'ViewQwest Broadband',
-      description:
-        'ViewQwest broadband sign up portal made with WordPress, VueJS, and Laravel',
-      link: 'https://signup.viewqwest.com/broadband/',
-      github: ''
-    },
-    {
       title: 'ViewQwest Pte Ltd',
       description:
-        'ViewQwest residential and corporate website made with WordPress using Elementor',
+        'ViewQwest residential, broadband sign up portal, and corporate website made with WordPress using Elementor, VueJs, Typescript, and Laravel',
       link: 'https://viewqwest.com/',
-      github: ''
-    },
-    {
-      title: 'First Future 2.0',
-      description:
-        'First Future 2.0 is a workforce development project implemented by PBEd, funded by the Citi Foundation as part of its Pathways to Progress focus area made with Moodle and Javascript',
-      link: 'https://firstfutureph.org/',
-      github: ''
-    },
-    {
-      title: 'Responsible Pet Ownership',
-      description:
-        'An eLearning site supported by the Office of Local Government Grants Program made with Kirby CMS, UIKit, and PHP',
-      link: 'https://www.penrithpeteducation.com.au/',
       github: ''
     }
   ]
