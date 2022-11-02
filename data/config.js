@@ -49,7 +49,7 @@ export const projects = {
     {
       title: 'ViewQwest Pte Ltd',
       description:
-        'ViewQwest residential, broadband sign up portal, and corporate website made with WordPress using Elementor, VueJs, Typescript, and Laravel',
+        'ViewQwest residential, broadband sign up portal, customer dashboard, and corporate website made with WordPress using Elementor, VueJs, Typescript, and Laravel',
       link: 'https://viewqwest.com/',
       github: ''
     }
