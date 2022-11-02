@@ -6,7 +6,14 @@ export const meta = {
 
 export const hero = {
   title: "Hey there! I'm Lemuel Lloren.",
-  desc: "I'm a web developer and designer building things people love."
+  cv: 'https://drive.google.com/file/d/1ILOvlMAfbgCJas-yiFvK_K2x3Bw5_qPN/view?usp=sharing',
+  desc: `
+    I have proceeded my dream to be a developer as it has been my passion. 
+    I am a talented Front-End developer with a UI/UX design background.
+    I had the opportunity to enhance my expertise by collaborating with different companies 
+    and by creating useful content for both business and customer use.
+    I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.
+  `
 };
 
 export const projects = {
@@ -54,6 +61,36 @@ export const projects = {
         'An eLearning site supported by the Office of Local Government Grants Program made with Kirby CMS, UIKit, and PHP',
       link: 'https://www.penrithpeteducation.com.au/',
       github: ''
+    }
+  ]
+};
+
+export const experience = {
+  title: 'My Experience',
+  desc: 'Companies that I worked on.',
+  experiences: [
+    {
+      company: 'Poplar Homes',
+      description: 'A Silicon Valley base Property Management Tech Company',
+      year: 'April 2022 - Present',
+      position: 'Junior Software Engineer',
+      link: 'https://www.poplarhomes.com/'
+    },
+    {
+      company: 'ViewQwest Pte Ltd',
+      description:
+        'A Singapore and Malaysia base Internet Service Provider Company',
+      year: 'September 2019 - April 2022',
+      position: 'Software Engineer',
+      link: 'https://viewqwest.com/'
+    },
+    {
+      company: 'Leet Digital',
+      description:
+        'Is a Sydney and Davao based software development and creative marketing agency',
+      year: 'November 2016 - September 2019',
+      position: 'Web Developer',
+      link: 'https://www.leetdigital.com/'
     }
   ]
 };

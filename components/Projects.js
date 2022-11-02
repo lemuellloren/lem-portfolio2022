@@ -34,7 +34,7 @@ export default function Projects() {
                       alt="Link icon"
                     />
                     <span className="ml-2  text-lightText  transition-colors duration-500">
-                      {item.link}
+                      Visit Website
                     </span>
                   </a>
                 )}
