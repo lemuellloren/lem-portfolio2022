@@ -4,6 +4,9 @@ import { useTheme } from 'next-themes';
 
 export default function Hero() {
   const { theme, setTheme } = useTheme();
+  const moonIcon = 'moon.svg';
+  const sunIcon = 'sun.svg';
+  const isThemeIcon = theme === 'light' ? moonIcon : sunIcon;
   return (
     <div className="mb-20">
       <div className="flex flex-row items-center justify-between w-full">
@@ -17,11 +20,7 @@ export default function Hero() {
           />
         </div>
         <Image
-          src={
-            theme === 'light'
-              ? '/static/icons/moon.svg'
-              : '/static/icons/sun.svg'
-          }
+          src={`/static/icons/${isThemeIcon}`}
           width={30}
           height={30}
           alt="Toggle theme"
