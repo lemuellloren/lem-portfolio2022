@@ -35,7 +35,7 @@ export default function Experience() {
                       alt="Link icon"
                     />
                     <span className="ml-2  text-lightText  transition-colors duration-500">
-                      Visit Website
+                      Visit website
                     </span>
                   </a>
                 )}

@@ -25,33 +25,56 @@ export const projects = {
   title: 'My Projects',
   desc: "Here are some of my favorite projects that I've worked on.",
   projects: [
-    {
-      title: 'Poplar Homes Owner Dashboard Renewal and Relisitng Product',
-      description:
-        "Poplar's owner dashboard software that owners can renew and relist their property stack used PostgreSQL, Express, React, and Node",
-      link: '',
-      github: ''
-    },
-    {
-      title: 'Poplar Homes Engineering Careers',
-      description:
-        "Poplar's v1 and v2 microsite for engineering department careers made with WordPress using Divi",
-      link: 'https://www.poplarhomes.com/engineeringcareers/',
-      github: ''
-    },
-    {
-      title: 'Poplar Homes ROI Calculator',
-      description:
-        'A ROI Calculor page for property management that shows how much time and money owner can save with Poplar Homes’ tech-enabled services made with JavaScript and WordPress',
-      link: 'https://www.poplarhomes.com/roi-calculator/',
-      github: ''
-    },
+    // {
+    //   title: 'Poplar Homes Owner Dashboard Renewal and Relisitng Product',
+    //   description:
+    //     "Poplar's owner dashboard software that owners can renew and relist their property stack used PostgreSQL, Express, React, and Node",
+    //   link: '',
+    //   github: ''
+    // },
+    // {
+    //   title: 'Poplar Homes Engineering Careers',
+    //   description:
+    //     "Poplar's v1 and v2 microsite for engineering department careers made with WordPress using Divi",
+    //   link: 'https://www.poplarhomes.com/engineeringcareers/',
+    //   github: ''
+    // },
+    // {
+    //   title: 'Poplar Homes ROI Calculator',
+    //   description:
+    //     'A ROI Calculor page for property management that shows how much time and money owner can save with Poplar Homes’ tech-enabled services made with JavaScript and WordPress',
+    //   link: 'https://www.poplarhomes.com/roi-calculator/',
+    //   github: ''
+    // },
     {
       title: 'ViewQwest Pte Ltd',
       description:
         'ViewQwest residential, broadband sign up portal, customer dashboard, and corporate website made with WordPress using Elementor, VueJs, Typescript, and Laravel',
       link: 'https://viewqwest.com/',
       github: ''
+    },
+    {
+      title: 'First Future 2.0',
+      description:
+        'First Future 2.0 is a workforce development project implemented by PBEd, funded by the Citi Foundation as part of its Pathways to Progress focus area made with Moodle and Javascript',
+      link: 'https://firstfutureph.org/',
+      github: ''
+    },
+    {
+      title: 'Responsible Pet Ownership',
+      description:
+        'An eLearning site supported by the Office of Local Government Grants Program made with Kirby CMS, UIKit, and PHP',
+      link: 'https://www.penrithpeteducation.com.au/',
+      github:
+        'https://github.com/lemuellloren/Responsible-Pet-Ownership-Online-Webapp-2017'
+    },
+    {
+      title: 'Roaming Healthcare',
+      description:
+        'A free directory of professional Australian healthcare services at your fingertips made with Kirby CMS, UIKit, and PHP',
+      link: 'https://roaming.healthcare/',
+      github:
+        'https://github.com/lemuellloren/Roaming-Healthcare-Web-App---2017'
     }
   ]
 };
