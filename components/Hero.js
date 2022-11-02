@@ -17,7 +17,11 @@ export default function Hero() {
           />
         </div>
         <Image
-          src="/static/icons/sun.svg"
+          src={
+            theme === 'light'
+              ? '/static/icons/moon.svg'
+              : '/static/icons/sun.svg'
+          }
           width={30}
           height={30}
           alt="Toggle theme"
