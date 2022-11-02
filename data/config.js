@@ -1,7 +1,12 @@
 export const meta = {
   title: 'Lemuel Lloren - Web Developer and Designer',
-  description:
-    "Hey, I'm Lemuel Lloren. I'm a web developer and designer building things people love."
+  description: `
+    I have proceeded my dream to be a developer as it has been my passion. 
+    I am a talented Front-End developer with a UI/UX design background.
+    I had the opportunity to enhance my expertise by collaborating with different companies 
+    and by creating useful content for both business and customer use.
+    I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.
+  `
 };
 
 export const hero = {
