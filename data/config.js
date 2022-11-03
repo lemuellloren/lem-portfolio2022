@@ -93,7 +93,7 @@ export const experience = {
     {
       company: 'ViewQwest Pte Ltd',
       description:
-        'A Singapore and Malaysia base Internet Service Provider Company',
+        'A Singapore and Malaysia based Internet Service Provider Company',
       year: 'September 2019 - April 2022',
       position: 'Software Engineer',
       link: 'https://viewqwest.com/'
@@ -101,7 +101,7 @@ export const experience = {
     {
       company: 'Leet Digital',
       description:
-        'Is a Sydney and Davao based software development and creative marketing agency',
+        'A Sydney and Davao based software development and creative marketing agency',
       year: 'November 2016 - September 2019',
       position: 'Web Developer',
       link: 'https://www.leetdigital.com/'
