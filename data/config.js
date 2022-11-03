@@ -17,7 +17,7 @@ export const hero = {
     I am a talented Front-End developer with a UI/UX design background.
     I had the opportunity to enhance my expertise by collaborating with different companies 
     and by creating useful content for both business and customer use.
-    I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.
+    Currently, I'm focused on building accessible, human-centered proptech products at Poplar.
   `
 };
 
@@ -81,7 +81,7 @@ export const projects = {
 
 export const experience = {
   title: 'My Experience',
-  desc: 'Companies that I worked on.',
+  desc: "Where I've Worked",
   experiences: [
     {
       company: 'Poplar Homes',
