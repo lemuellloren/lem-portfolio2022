@@ -28,14 +28,11 @@ export default function Projects() {
                     rel="noreferrer"
                   >
                     <Image
-                      src="/static/icons/link.svg"
+                      src="/static/icons/external-link.svg"
                       width={18}
                       height={18}
                       alt="Link icon"
                     />
-                    <span className="ml-2  text-lightText  transition-colors duration-500">
-                      Visit website
-                    </span>
                   </a>
                 )}
                 {item.github && (
@@ -51,9 +48,6 @@ export default function Projects() {
                       height={18}
                       alt="Link icon"
                     />
-                    <span className="ml-2  text-lightText  transition-colors duration-500">
-                      Github link
-                    </span>
                   </a>
                 )}
               </div>
