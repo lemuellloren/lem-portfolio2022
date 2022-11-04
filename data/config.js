@@ -11,13 +11,12 @@ export const meta = {
 
 export const hero = {
   title: "Hey there! I'm Lemuel Lloren.",
-  cv: 'https://drive.google.com/file/d/1UUuRC6_Lry7VMTw-V6IY_SmbufZk520W/view?usp=sharing',
+  cv: 'https://drive.google.com/file/d/1f6QTlObh8ujZSp8W0H_r0OPRFQ7RMc4D/view?usp=sharing',
   desc: `
     I have proceeded my dream to be a developer as it has been my passion. 
     I am a talented Front-End developer with a UI/UX design background.
     I had the opportunity to enhance my expertise by collaborating with different companies 
     and by creating useful content for both business and customer use.
-    Currently, I'm focused on building accessible, human-centered proptech products at Poplar.
   `
 };
 
@@ -25,27 +24,27 @@ export const projects = {
   title: 'My Projects',
   desc: "Here are some of my favorite projects that I've worked on.",
   projects: [
-    // {
-    //   title: 'Poplar Homes Owner Dashboard Renewal and Relisitng Product',
-    //   description:
-    //     "Poplar's owner dashboard software that owners can renew and relist their property stack used PostgreSQL, Express, React, and Node",
-    //   link: '',
-    //   github: ''
-    // },
-    // {
-    //   title: 'Poplar Homes Engineering Careers',
-    //   description:
-    //     "Poplar's v1 and v2 microsite for engineering department careers made with WordPress using Divi",
-    //   link: 'https://www.poplarhomes.com/engineeringcareers/',
-    //   github: ''
-    // },
-    // {
-    //   title: 'Poplar Homes ROI Calculator',
-    //   description:
-    //     'A ROI Calculor page for property management that shows how much time and money owner can save with Poplar Homes’ tech-enabled services made with JavaScript and WordPress',
-    //   link: 'https://www.poplarhomes.com/roi-calculator/',
-    //   github: ''
-    // },
+    {
+      title: 'Poplar Homes Owner Dashboard Renewal and Relisting Products',
+      description:
+        "Poplar's owner dashboard software that owners can renew and relist their property stack used PostgreSQL, Express, React, and Node",
+      link: '',
+      github: ''
+    },
+    {
+      title: 'Poplar Homes Engineering Careers',
+      description:
+        "Poplar's v1 and v2 microsite for engineering department careers made with WordPress using Divi",
+      link: 'https://www.poplarhomes.com/engineeringcareers/',
+      github: ''
+    },
+    {
+      title: 'Poplar Homes ROI Calculator',
+      description:
+        'A ROI Calculor page for property management that shows how much time and money owner can save with Poplar Homes’ tech-enabled services made with JavaScript and WordPress',
+      link: 'https://www.poplarhomes.com/roi-calculator/',
+      github: ''
+    },
     {
       title: 'ViewQwest Pte Ltd',
       description:
@@ -86,7 +85,7 @@ export const experience = {
     {
       company: 'Poplar Homes',
       description: 'A Silicon Valley base Property Management Tech Company',
-      year: 'April 2022 - Present',
+      year: 'April 2022 - November 2022',
       position: 'Junior Software Engineer',
       link: 'https://www.poplarhomes.com/'
     },
