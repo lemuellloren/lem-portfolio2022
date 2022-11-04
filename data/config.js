@@ -11,7 +11,7 @@ export const meta = {
 
 export const hero = {
   title: "Hey there! I'm Lemuel Lloren.",
-  cv: 'https://drive.google.com/file/d/1ILOvlMAfbgCJas-yiFvK_K2x3Bw5_qPN/view?usp=sharing',
+  cv: 'https://drive.google.com/file/d/1UUuRC6_Lry7VMTw-V6IY_SmbufZk520W/view?usp=sharing',
   desc: `
     I have proceeded my dream to be a developer as it has been my passion. 
     I am a talented Front-End developer with a UI/UX design background.
