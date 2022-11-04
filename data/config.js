@@ -122,7 +122,9 @@ export const stack = {
     'TailwindCSS',
     'PHP',
     'WordPress',
-    'Git'
+    'Git',
+    'Figma',
+    'Sketch'
   ]
 };
 
