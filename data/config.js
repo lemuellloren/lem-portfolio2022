@@ -10,11 +10,9 @@ export const meta = {
 };
 
 export const hero = {
-  title: "Hey there! I'm Lemuel Lloren.",
+  title: "Hey there! I'm Lemuel Lloren",
   cv: 'https://drive.google.com/file/d/1f6QTlObh8ujZSp8W0H_r0OPRFQ7RMc4D/view?usp=sharing',
-  desc: `
-    I have proceeded my dream to be a developer as it has been my passion. 
-    I am a talented Front-End developer with a UI/UX design background.
+  desc: `I am a talented Front-End developer with a UI/UX design background.
     I had the opportunity to enhance my expertise by collaborating with different companies 
     and by creating useful content for both business and customer use.
   `

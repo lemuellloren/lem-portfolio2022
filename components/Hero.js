@@ -21,8 +21,8 @@ export default function Hero() {
         </div>
         <Image
           src={`/static/icons/${isThemeIcon}`}
-          width={30}
-          height={30}
+          width={20}
+          height={20}
           alt="Toggle theme"
           className="cursor-pointer toggleTheme"
           onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
