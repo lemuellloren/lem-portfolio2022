@@ -14,29 +14,33 @@ export default function Experience() {
         {experience.experiences.map((item, index) => {
           return (
             <div key={index} className="mb-5 border-lightText border-b">
-              <h3>{item.company}</h3>
+              <div className="flex items-center flex-wrap">
+                  <div className="company-name">
+                     <h3>{item.company}</h3>
+                  </div>
+                  <div className="company-url">
+                      {item.link && (
+                      <a
+                        href={item.link}
+                        className="flex items-center  py-1 px-3"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <Image
+                          src="/static/icons/external-link.svg"
+                          width={18}
+                          height={18}
+                          alt="Link icon"
+                        />
+                      </a>
+                    )}
+                  </div>
+              </div>
               <div className="flex flex-col md:flex-row md:gap-2 my-2">
                 <small className="font-bold">{item.position}</small>
                 <small>{item.year}</small>
               </div>
-              <p>{item.description}</p>
-              <div className="flex items-center flex-wrap -m-3 pt-5 py-5">
-                {item.link && (
-                  <a
-                    href={item.link}
-                    className="flex items-center  py-1 px-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Image
-                      src="/static/icons/external-link.svg"
-                      width={18}
-                      height={18}
-                      alt="Link icon"
-                    />
-                  </a>
-                )}
-              </div>
+              <p className="mb-5">{item.description}</p>
             </div>
           );
         })}
