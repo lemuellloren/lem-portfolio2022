@@ -37,14 +37,14 @@ export const projects = {
       link: 'https://viewqwest.com/',
       github: ''
     },
-    {
-      title: 'Responsible Pet Ownership',
-      description:
-        'An eLearning site supported by the Office of Local Government Grants Program made with Kirby CMS, UIKit, and PHP',
-      link: 'https://www.penrithpeteducation.com.au/',
-      github:
-        'https://github.com/lemuellloren/Responsible-Pet-Ownership-Online-Webapp-2017'
-    },
+    // {
+    //   title: 'Responsible Pet Ownership',
+    //   description:
+    //     'An eLearning site supported by the Office of Local Government Grants Program made with Kirby CMS, UIKit, and PHP',
+    //   link: 'https://www.penrithpeteducation.com.au/',
+    //   github:
+    //     'https://github.com/lemuellloren/Responsible-Pet-Ownership-Online-Webapp-2017'
+    // },
     {
       title: 'Roaming Healthcare',
       description:
