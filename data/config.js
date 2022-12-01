@@ -75,7 +75,7 @@ export const experience = {
       link: 'https://www.poplarhomes.com/'
     },
     {
-      company: 'ViewQwest Pte Ltd',
+      company: 'ViewQwest',
       description:
         'A Singapore and Malaysia based Internet Service Provider Company',
       year: 'September 2019 - April 2022',
