@@ -11,7 +11,8 @@ export const meta = {
 
 export const hero = {
   title: "Hey there! I'm Lemuel Lloren",
-  cv: 'https://drive.google.com/file/d/1f6QTlObh8ujZSp8W0H_r0OPRFQ7RMc4D/view?usp=sharing',
+  // cv: 'https://drive.google.com/file/d/1f6QTlObh8ujZSp8W0H_r0OPRFQ7RMc4D/view?usp=sharing',
+  cv: '',
   desc: `I am a talented Front-End developer with a UI/UX design background.
     I had the opportunity to enhance my expertise by collaborating with different companies 
     and by creating useful content for both business and customer use.
@@ -30,31 +31,10 @@ export const projects = {
       github: ''
     },
     {
-      title: 'Poplar Homes Engineering Careers',
-      description:
-        "Poplar's v1 and v2 microsite for engineering department careers made with WordPress using Divi",
-      link: 'https://www.poplarhomes.com/engineeringcareers/',
-      github: ''
-    },
-    {
-      title: 'Poplar Homes ROI Calculator',
-      description:
-        'A ROI Calculor page for property management that shows how much time and money owner can save with Poplar Homes’ tech-enabled services made with JavaScript and WordPress',
-      link: 'https://www.poplarhomes.com/roi-calculator/',
-      github: ''
-    },
-    {
       title: 'ViewQwest Pte Ltd',
       description:
         'ViewQwest residential, broadband sign up portal, customer dashboard, and corporate website made with WordPress using Elementor, VueJs, Typescript, and Laravel',
       link: 'https://viewqwest.com/',
-      github: ''
-    },
-    {
-      title: 'First Future 2.0',
-      description:
-        'First Future 2.0 is a workforce development project implemented by PBEd, funded by the Citi Foundation as part of its Pathways to Progress focus area made with Moodle and Javascript',
-      link: 'https://firstfutureph.org/',
       github: ''
     },
     {
@@ -81,8 +61,15 @@ export const experience = {
   desc: "Where I've Worked",
   experiences: [
     {
+      company: 'NME Networks',
+      description: 'A London based Media Tech Company',
+      year: 'December 2022 - Present',
+      position: 'Software Engineer',
+      link: 'https://nmenetworks.com/'
+    },
+    {
       company: 'Poplar Homes',
-      description: 'A Silicon Valley base Property Management Tech Company',
+      description: 'A Silicon Valley based Property Management Tech Company',
       year: 'April 2022 - November 2022',
       position: 'Junior Software Engineer',
       link: 'https://www.poplarhomes.com/'
@@ -109,11 +96,12 @@ export const experience = {
 export const stack = {
   title: 'My Stack',
   stack: [
-    'HTML',
-    'CSS',
+    'HTML/CSS',
     'JavaScript',
     'Typescript',
     'React',
+    'GatsbyJS',
+    'NextJS',
     'VueJS',
     'NodeJS',
     'GraphQL',
