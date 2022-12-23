@@ -28,7 +28,7 @@ export default function Hero() {
           onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         />
       </div>
-      <h1 className="mt-5 mb-4">{hero.title}</h1>
+      <h1 className="mt-5 mb-4 md:text-9xl">{hero.title}</h1>
       <p className="text-lg">{hero.desc}</p>
       {hero.cv && (
           <div className=" mt-8 border border-lightText rounded-xl py-2 px-4 rounded inline-flex items-center">
