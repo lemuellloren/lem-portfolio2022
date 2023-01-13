@@ -11,8 +11,7 @@ export const meta = {
 
 export const hero = {
   title: "Lemuel Lloren",
-  // cv: 'https://drive.google.com/file/d/1f6QTlObh8ujZSp8W0H_r0OPRFQ7RMc4D/view?usp=sharing',
-  cv: '',
+  cv: 'https://drive.google.com/file/d/1uDCdezem-VuYak4ZZVCr_DSQ2NDvV6c2/view?usp=sharing',
   desc: `I am a talented Software Developer with a UI/UX design background.
     I had the opportunity to enhance my expertise by collaborating with different companies 
     and by creating useful content for both business and customer use.
@@ -63,7 +62,7 @@ export const experience = {
     {
       company: 'NME Networks',
       description: 'A London based Media Tech Company',
-      year: 'December 2022 - Present',
+      year: 'December 2022 - Janary 2023',
       position: 'Software Engineer',
       link: 'https://nmenetworks.com/'
     },
