@@ -109,6 +109,7 @@ export const stack = {
     'Material UI',
     'PHP',
     'WordPress',
+    'Contentful',
     'Git',
     'Figma',
     'Sketch'
