@@ -61,33 +61,33 @@ export const experience = {
   experiences: [
     {
       company: 'NME Networks',
-      description: 'A London based Media Tech Company',
-      year: 'December 2022 - Janary 2023',
+      description: 'A London based media tech company',
+      year: 'December 2022 - January 2023',
       position: 'Software Engineer',
-      link: 'https://nmenetworks.com/'
+      link: 'https://nmenetworks.com/',
     },
     {
       company: 'Poplar Homes',
-      description: 'A Silicon Valley based Property Management Tech Company',
+      description: 'A Silicon Valley based property management tech company',
       year: 'April 2022 - November 2022',
       position: 'Junior Software Engineer',
-      link: 'https://www.poplarhomes.com/'
+      link: 'https://www.poplarhomes.com/',
     },
     {
       company: 'ViewQwest',
       description:
-        'A Singapore and Malaysia based Internet Service Provider Company',
+        'A Singapore and Malaysia based internet service provider company',
       year: 'September 2019 - April 2022',
       position: 'Software Engineer',
-      link: 'https://viewqwest.com/'
+      link: 'https://viewqwest.com/',
     },
     {
       company: 'Leet Digital',
       description:
-        'A Sydney and Davao based software development and creative marketing agency',
+        'A Sydney, Austalia based software development and creative marketing agency',
       year: 'November 2016 - September 2019',
       position: 'Web Developer',
-      link: 'https://www.leetdigital.com/'
+      link: 'https://www.leetdigital.com/',
     }
   ]
 };
