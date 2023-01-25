@@ -10,7 +10,7 @@ export default function Projects() {
         </h2>
       </div>
       <p className="text-lg">{projects.desc}</p>
-      <div className="mt-8 grid md:grid-cols-2 gap-4 mt-8">
+      <div className="mt-8 grid md:grid-cols-3 gap-4 mt-8">
         {projects.projects.map((item, index) => {
           return (
             <div key={index} className="mx-auto bg-gradient-to-r p-1 from-[#FDE68A] via-[#FCA5A5] to-[#FECACA] rounded-xl w-full">
