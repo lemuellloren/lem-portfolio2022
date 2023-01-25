@@ -11,7 +11,7 @@ export default function Stack() {
       <div className="w-full flex flex-wrap -m-2">
         {stack.stack.map((item, index) => (
           <span
-            className="border  border-lightText rounded-lg m-2 px-3 py-1"
+            className="bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center rounded-lg m-2 px-3 py-1"
             key={index}
           >
             {item}
