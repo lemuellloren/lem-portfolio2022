@@ -19,36 +19,38 @@ export default function Hero() {
             alt="Lemuel Lloren"
           />
         </div>
-        <Image
-          src={`/static/icons/${isThemeIcon}`}
-          width={20}
-          height={20}
-          alt="Toggle theme"
-          className="cursor-pointer toggleTheme"
-          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-        />
+        <button className="cursor-pointer toggleTheme w-9 h-9 bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+          <Image
+            src={`/static/icons/${isThemeIcon}`}
+            width={20}
+            height={20}
+            alt="Toggle theme"
+          />
+        </button>
       </div>
-      <h1 className="mt-5 mb-4 md:text-9xl">{hero.title}</h1>
-      <p className="text-lg">{hero.desc}</p>
+      <h1 className="mt-5 mb-4 font-bold text-3xl md:text-5xl tracking-tight">{hero.title}</h1>
+      <h2 className="text-gray-700 dark:text-gray-200 mb-4">{hero.position}</h2>
+      <div className="text-base">{hero.desc}</div>
       {hero.cv && (
-          <div className=" mt-8 border border-lightText rounded-xl py-2 px-4 rounded inline-flex items-center">
-              <a
-              href={hero.cv}
-              className="flex items-center"
-              target="_blank"
-              rel="noreferrer"
-              >
-                <Image
-                src="/static/icons/download.svg"
-                width={18}
-                height={18}
-                alt="Link icon"
-                />
-                <span className="ml-2  text-lightText  transition-colors duration-500">
-                Download CV
-                </span>
-              </a>
-          </div>
+        <div className=" mt-8 rounded-xl py-2 px-4 rounded inline-flex items-center bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center">
+          <a
+            href={hero.cv}
+            className="flex items-center"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="/static/icons/download.svg"
+              width={18}
+              height={18}
+              alt="Link icon"
+            />
+            <span className="ml-2 font-bold text-lightText transition-colors duration-500">
+              Download CV
+            </span>
+          </a>
+        </div>
       )}
     </div>
   );

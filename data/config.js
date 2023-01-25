@@ -11,10 +11,9 @@ export const meta = {
 
 export const hero = {
   title: "Lemuel Lloren",
+  position: 'Software Engineer - Frontend',
   cv: 'https://drive.google.com/file/d/1uDCdezem-VuYak4ZZVCr_DSQ2NDvV6c2/view?usp=sharing',
-  desc: `I am a talented Software Developer with a UI/UX design background.
-    I had the opportunity to enhance my expertise by collaborating with different companies 
-    and by creating useful content for both business and customer use.
+  desc: `My interests are in front-end engineering, and I love to create beautiful and performant products with delightful user experiences. 
   `
 };
 
