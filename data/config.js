@@ -13,7 +13,7 @@ export const hero = {
   title: "Lemuel Lloren",
   position: 'Software Engineer - Frontend',
   cv: 'https://drive.google.com/file/d/1uDCdezem-VuYak4ZZVCr_DSQ2NDvV6c2/view?usp=sharing',
-  desc: `My interests are in front-end engineering, and I love to create beautiful and performant products with delightful user experiences. 
+  desc: `My interests are in frontend engineering, and I love to create beautiful and performant products with delightful user experiences. 
   `
 };
 
