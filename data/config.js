@@ -26,7 +26,7 @@ export const projects = {
       title: 'Poplar Homes Owner Dashboard Renewal and Relisting Products',
       description:
         "Poplar's owner dashboard software that owners can renew and relist their property stack used PostgreSQL, Express, React, and Node",
-      link: '',
+      link: 'https://www.poplarhomes.com/login',
       github: ''
     },
     {

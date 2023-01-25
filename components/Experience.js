@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <div className="">
       <div className="overflow-x-hidden w-full">
-        <h2 className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max ">
+        <h2 className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl">
           {experience.title}
         </h2>
       </div>
@@ -14,7 +14,7 @@ export default function Experience() {
         {experience.experiences.map((item, index) => {
           return (
             <div key={index} className="mx-auto bg-gradient-to-r p-1 from-[#6EE7B7] via-[#3B82F6] to-[#9333EA] rounded-xl w-full">
-              <div  className="dark:bg-dark bg-white p-5 rounded-xl">
+              <div  className="h-full dark:bg-dark bg-white p-5 rounded-xl">
                 <div className="flex items-center flex-wrap">
                   <div className="company-name">
                     <h3>{item.company}</h3>
@@ -41,7 +41,7 @@ export default function Experience() {
                   <div className="font-bold text-sm">{item.position}</div>
                   <div className="text-sm">{item.year}</div>
                 </div>
-                {/* <p className="mb-5">{item.description}</p> */}
+                <p className="text-sm mb-5">{item.description}</p>
               </div>
             </div>
           );
