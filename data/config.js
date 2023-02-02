@@ -48,24 +48,21 @@ export const projects = {
       description:
         'A free directory of professional Australian healthcare services at your fingertips',
       link: 'https://roaming.healthcare/',
-      github:
-        'https://github.com/lemuellloren/Roaming-Healthcare-Web-App---2017'
+      github: 'https://github.com/lemuellloren/Roaming-Healthcare-Web-App---2017',
     },
     {
       title: 'Responsible Pet Ownership',
       description:
         'An eLearning site supported by the Office of Local Government Grants Program',
       link: 'https://www.penrithpeteducation.com.au/',
-      github:
-        'https://github.com/lemuellloren/Responsible-Pet-Ownership-Online-Webapp-2017'
+      github: 'https://github.com/lemuellloren/Responsible-Pet-Ownership-Online-Webapp-2017',
     },
     {
       title: 'Encapsulator',
       description:
         "Capture the essence of who you are today and deliver it to your future self or loved one's. Share love, send hope, and stay on track with the world's first-ever Digital Time Capsule.",
       link: 'https://encapsulator.io/',
-      github:
-        ''
+      github:'',
     },
   ]
 };
