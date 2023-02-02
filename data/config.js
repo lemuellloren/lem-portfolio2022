@@ -41,21 +41,21 @@ export const projects = {
         'A Modern Real Estate App made with React, NextJS, Chakra UI, and RapidAPI',
       link: 'https://homyz-app.vercel.app/',
       github:
-        'https://github.com/lemuellloren/modern-real-estate-app'
+        'lemuellloren/modern-real-estate-app'
     },
     {
       title: 'Roaming Healthcare',
       description:
         'A free directory of professional Australian healthcare services at your fingertips',
       link: 'https://roaming.healthcare/',
-      github: 'https://github.com/lemuellloren/Roaming-Healthcare-Web-App---2017',
+      github: 'lemuellloren/Roaming-Healthcare-Web-App---2017',
     },
     {
       title: 'Responsible Pet Ownership',
       description:
         'An eLearning site supported by the Office of Local Government Grants Program',
       link: 'https://www.penrithpeteducation.com.au/',
-      github: 'https://github.com/lemuellloren/Responsible-Pet-Ownership-Online-Webapp-2017',
+      github: 'lemuellloren/Responsible-Pet-Ownership-Online-Webapp-2017',
     },
     {
       title: 'Encapsulator',
