@@ -1,3 +1,4 @@
+
 export const meta = {
   title: 'Lemuel Lloren - Web Developer and Designer',
   description: `
@@ -73,33 +74,37 @@ export const experience = {
   experiences: [
     {
       company: 'NME Networks',
-      description: 'A London based media tech company',
+      description: 'A London based MediaTech company',
       year: 'December 2022 - January 2023',
       position: 'Software Engineer',
       link: 'https://nmenetworks.com/',
+      logo: '/static/logos/nme.jpg',
     },
     {
       company: 'Poplar Homes',
-      description: 'A Silicon Valley based property management tech company',
+      description: 'A Silicon Valley based PropTech company',
       year: 'April 2022 - November 2022',
       position: 'Junior Software Engineer',
       link: 'https://www.poplarhomes.com/',
+      logo: '/static/logos/poplar.jpg',
     },
     {
       company: 'ViewQwest',
       description:
-        'A Singapore and Malaysia based internet service provider company',
+        'A Singapore and Malaysia based ISP company',
       year: 'September 2019 - April 2022',
       position: 'Software Engineer',
       link: 'https://viewqwest.com/',
+      logo: '/static/logos/viewqwest.jpg',
     },
     {
       company: 'Leet Digital',
       description:
-        'A Sydney, Austalia based software development and creative marketing agency',
+        'A Sydney, Austalia based MarTech company',
       year: 'November 2016 - September 2019',
       position: 'Web Developer',
       link: 'https://www.leetdigital.com/',
+      logo: '/static/logos/leet.jpg',
     }
   ]
 };
@@ -124,7 +129,8 @@ export const stack = {
     'Contentful',
     'Git',
     'Figma',
-    'Sketch'
+    'Sketch',
+    'Salesforce'
   ]
 };
 
