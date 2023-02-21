@@ -13,7 +13,7 @@ export default function Experience() {
       <div className="grid md:grid-cols-2 gap-4 mt-8">
         {experience.experiences.map((item, index) => {
           return (
-            <div key={index} className="h-full dark:bg-dark bg-white p-5 rounded-xl">
+            <div key={index} className="h-full rounded-xl">
               <div className="flex items-center flex-wrap gap-4 mb-5">
                 <div>
                   <img className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src={item.logo} alt={item.company} />
