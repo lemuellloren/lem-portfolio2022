@@ -33,7 +33,7 @@ export default function Hero() {
       <h2 className="text-gray-700 dark:text-gray-200 mb-4">{hero.position}</h2>
       <div className="text-base">{hero.desc}</div>
       {hero.cv && (
-        <div className=" mt-8 rounded-xl py-2 px-4 rounded inline-flex items-center bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center">
+        <div className="mt-8 rounded-xl py-2 px-4 rounded inline-flex items-center bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center">
           <a
             href={hero.cv}
             className="flex items-center"
