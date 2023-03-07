@@ -118,7 +118,6 @@ export const stack = {
     'React',
     'GatsbyJS',
     'NextJS',
-    'RedwoodJS',
     'NodeJS',
     'GraphQL',
     'TailwindCSS',
