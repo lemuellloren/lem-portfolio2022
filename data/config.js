@@ -73,6 +73,14 @@ export const experience = {
   desc: "Where I've Worked",
   experiences: [
     {
+      company: 'Harvey Norman',
+      description: "An Australian based retail company",
+      year: 'March 2023 - Present',
+      position: 'Software Engineer',
+      link: 'https://www.harveynorman.com.au/',
+      logo: '/static/logos/harvey-norman',
+    },
+    {
       company: 'NME Networks',
       description: 'A London based MediaTech company',
       year: 'December 2022 - January 2023',
@@ -121,15 +129,14 @@ export const stack = {
     'NodeJS',
     'GraphQL',
     'TailwindCSS',
-    'Chakra UI',
     'Material UI',
     'PHP',
     'WordPress',
     'Webflow',
+    'Shopify',
     'Contentful',
     'Git',
     'Figma',
-    'Sketch',
     'Salesforce'
   ]
 };
