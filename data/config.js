@@ -78,7 +78,7 @@ export const experience = {
       year: 'March 2023 - Present',
       position: 'Software Engineer',
       link: 'https://www.harveynorman.com.au/',
-      logo: '/static/logos/harvey-norman',
+      logo: '/static/logos/harvey-norman.jpg',
     },
     {
       company: 'NME Networks',
