@@ -81,14 +81,6 @@ export const experience = {
       logo: '/static/logos/harvey-norman.jpg',
     },
     {
-      company: 'NME Networks',
-      description: 'A London based MediaTech company',
-      year: 'December 2022 - January 2023',
-      position: 'Software Engineer',
-      link: 'https://nmenetworks.com/',
-      logo: '/static/logos/nme.jpg',
-    },
-    {
       company: 'Poplar Homes',
       description: 'A Silicon Valley based PropTech company',
       year: 'April 2022 - November 2022',
