@@ -19,8 +19,10 @@ export default function Hero() {
             alt="Lemuel Lloren"
           />
         </div>
-        <button className="cursor-pointer toggleTheme w-9 h-9 bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
-          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+        <button
+          className="cursor-pointer toggleTheme w-9 h-9 bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        >
           <Image
             src={`/static/icons/${isThemeIcon}`}
             width={20}
@@ -29,10 +31,12 @@ export default function Hero() {
           />
         </button>
       </div>
-      <h1 className="mt-5 mb-4 font-bold text-3xl md:text-5xl tracking-tight">{hero.title}</h1>
+      <h1 className="mt-5 mb-4 font-bold text-3xl md:text-5xl tracking-tight">
+        {hero.title}
+      </h1>
       <h2 className="text-gray-700 dark:text-gray-200 mb-4">{hero.position}</h2>
       <div className="text-base">{hero.desc}</div>
-      {hero.cv && (
+      {hero.cv && hero.isActive && (
         <div className="mt-8 rounded-xl py-2 px-4 rounded inline-flex items-center bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center">
           <a
             href={hero.cv}
@@ -46,7 +50,7 @@ export default function Hero() {
               height={18}
               alt="Link icon"
             />
-            <span className="ml-2 font-bold text-lightText transition-colors duration-500">
+            <span className="ml-2 font-bold text-lightText transition-colors duration-500 hidden">
               Download CV
             </span>
           </a>

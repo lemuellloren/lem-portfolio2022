@@ -13,7 +13,10 @@ export default function Projects() {
       <div className="mt-8 grid md:grid-cols-3 gap-4 mt-8">
         {projects.projects.map((item, index) => {
           return (
-            <div key={index} className="mx-auto bg-gradient-to-r p-1 from-[#00dc82] via-[#36e4da] to-[#16a79e] rounded-xl w-full">
+            <div
+              key={index}
+              className="mx-auto border border-lightText mb-4 rounded-xl w-full"
+            >
               <div className="h-full dark:bg-dark bg-white p-5 rounded-xl">
                 <h3 className="mb-2">{item.title}</h3>
                 <div className="text-sm">{item.description}</div>
