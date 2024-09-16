@@ -16,7 +16,11 @@ export default function Experience() {
             <div key={index} className="h-full rounded-xl">
               <div className="flex items-center flex-wrap gap-4 mb-5">
                 <div>
-                  <img className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src={item.logo} alt={item.company} />
+                  <img
+                    className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 grayscale hover:grayscale-0 transition-all"
+                    src={item.logo}
+                    alt={item.company}
+                  />
                 </div>
                 <div className="company-name">
                   <h3>{item.company}</h3>
