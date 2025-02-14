@@ -165,14 +165,6 @@ ul {
   animation-play-state: paused !important;
 }
 
-.marquee__group img {
-  width: var(--size);
-  aspect-ratio: 16/9;
-  padding: calc(var(--size) / 10);
-  border-radius: 0.5rem;
-  object-fit: contain;
-}
-
 .marquee--vertical .marquee__group img {
   aspect-ratio: 1;
   width: calc(var(--size) / 1.5);

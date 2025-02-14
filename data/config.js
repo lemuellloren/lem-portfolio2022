@@ -87,16 +87,16 @@ export const experience = {
 export const stack = {
   title: 'My Stack',
   stack: [
-    { logo: '/static/logos/javascript.svg', altText: 'JavaScript' },
-    { logo: '/static/logos/typescript.svg', altText: 'TypeScript' },
-    { logo: '/static/logos/react.svg', altText: 'React' },
-    { logo: '/static/logos/nodejs.svg', altText: 'Node.js' },
-    { logo: '/static/logos/wordpress.svg', altText: 'WordPress' },
-    { logo: '/static/logos/shopify.svg', altText: 'Shopify' },
-    { logo: '/static/logos/nextjs.svg', altText: 'Next.js' },
-    { logo: '/static/logos/graphql.svg', altText: 'GraphQL' },
-    { logo: '/static/logos/webflow.svg', altText: 'Webflow' },
-    { logo: '/static/logos/tailwindcss.svg', altText: 'Tailwind CSS' }
+    { logo: '/static/logos/javascript.svg', text: 'JavaScript' },
+    { logo: '/static/logos/typescript.svg', text: 'TypeScript' },
+    { logo: '/static/logos/react.svg', text: 'React' },
+    { logo: '/static/logos/nodejs.svg', text: 'Node.js' },
+    { logo: '/static/logos/wordpress.svg', text: 'WordPress' },
+    { logo: '/static/logos/shopify.svg', text: 'Shopify' },
+    { logo: '/static/logos/nextjs.svg', text: 'Next.js' },
+    { logo: '/static/logos/graphql.svg', text: 'GraphQL' },
+    { logo: '/static/logos/webflow.svg', text: 'Webflow' },
+    { logo: '/static/logos/tailwindcss.svg', text: 'Tailwind CSS' }
   ]
 };
 

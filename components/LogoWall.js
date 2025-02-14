@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import clsx from 'clsx';
+import Image from 'next/image';
 
 const LogoWall = ({
   items = [],
   direction = 'horizontal',
   pauseOnHover = false,
-  size = 'clamp(8rem, 1rem + 30vmin, 25rem)',
+  size = '8rem',
   duration = '60s',
-  textColor = '#ffffff'
+  textColor = '#ffffff',
+  showText = false
 }) => {
   const [isPaused, setIsPaused] = useState(false);
 
@@ -22,14 +24,23 @@ const LogoWall = ({
     paused: isPaused
   });
 
-  const renderImages = (keyPrefix) =>
+  const renderItems = (keyPrefix) =>
     items.map((item, idx) => (
-      <img
-        className="bg-gray-200 rounded-lg dark:bg-zinc-900"
+      <div
         key={`${keyPrefix}-${idx}`}
-        src={item.logo}
-        alt={item.altText}
-      />
+        className="logo-wrap flex items-center dark:bg-dark bg-white rounded-lg  p-2"
+      >
+        <Image
+          className="h-12 w-12 object-contain"
+          src={item.logo}
+          alt={item.text}
+          width={20}
+          height={20}
+        />
+        {showText && (
+          <h4 className="font-normal ml-2 whitespace-nowrap">{item.text}</h4>
+        )}
+      </div>
     ));
 
   return (
@@ -48,9 +59,9 @@ const LogoWall = ({
           onMouseEnter={() => handleHover(true)}
           onMouseLeave={() => handleHover(false)}
         >
-          <div className="marquee__group">{renderImages(`original-${i}`)}</div>
+          <div className="marquee__group">{renderItems(`original-${i}`)}</div>
           <div className="marquee__group" aria-hidden="true">
-            {renderImages(`dup-${i}`)}
+            {renderItems(`dup-${i}`)}
           </div>
         </div>
       ))}

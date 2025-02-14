@@ -22,8 +22,8 @@ export default function Stack() {
             items={stack.stack}
             direction="horizontal"
             pauseOnHover={true}
-            size="clamp(5rem, 1rem + 5vmin, 25rem)"
             duration="60s"
+            showText={true}
           />
         </div>
       </div>
