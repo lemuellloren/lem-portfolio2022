@@ -21,7 +21,10 @@ export default function Experience() {
         <div className="grid md:grid-cols-2 gap-4 mt-8">
           {experience.experiences.map((item, index) => {
             return (
-              <div key={index} className="h-full rounded-xl">
+              <div
+                key={index}
+                className="dark:bg-dark bg-white h-full p-5 mx-auto border border-lightText mb-4 rounded-xl w-full"
+              >
                 <div className="flex items-center flex-wrap gap-4 mb-5">
                   <div>
                     <img

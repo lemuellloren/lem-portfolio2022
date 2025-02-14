@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { defaultAnimationConfig, hero } from '@/data/config';
 import { useTheme } from 'next-themes';
@@ -5,10 +6,19 @@ import AnimatedContent from './AnimatedContent';
 import BlurText from './BlurText ';
 
 export default function Hero() {
-  const { theme, setTheme } = useTheme();
-  const moonIcon = 'moon.svg';
-  const sunIcon = 'sun.svg';
-  const isThemeIcon = theme === 'light' ? moonIcon : sunIcon;
+  const { theme, setTheme, systemTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    if (!localStorage.getItem('theme')) {
+      setTheme('dark');
+    }
+  }, [setTheme]);
+
+  const currentTheme = theme === 'system' ? systemTheme : theme;
+  const isThemeIcon = currentTheme === 'light' ? 'moon.svg' : 'sun.svg';
+
   return (
     <AnimatedContent {...defaultAnimationConfig}>
       <div className="mb-20">
@@ -22,17 +32,21 @@ export default function Hero() {
               alt="Lemuel Lloren"
             />
           </div>
-          <button
-            className="cursor-pointer toggleTheme w-9 h-9 bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-          >
-            <Image
-              src={`/static/icons/${isThemeIcon}`}
-              width={20}
-              height={20}
-              alt="Toggle theme"
-            />
-          </button>
+          {mounted && (
+            <button
+              className="cursor-pointer toggleTheme w-9 h-9 bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
+              onClick={() =>
+                setTheme(currentTheme === 'light' ? 'dark' : 'light')
+              }
+            >
+              <Image
+                src={`/static/icons/${isThemeIcon}`}
+                width={20}
+                height={20}
+                alt="Toggle theme"
+              />
+            </button>
+          )}
         </div>
         <BlurText
           text={hero.title}
@@ -47,7 +61,7 @@ export default function Hero() {
         </h2>
         <div className="text-base">{hero.desc}</div>
         {hero.cv && hero.isActive && (
-          <div className="mt-8 rounded-xl py-2 px-4 rounded inline-flex items-center bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center">
+          <div className="mt-8 rounded-xl py-2 px-4 inline-flex items-center bg-gray-200 dark:bg-zinc-900">
             <a
               href={hero.cv}
               className="flex items-center"
@@ -58,9 +72,9 @@ export default function Hero() {
                 src="/static/icons/download.svg"
                 width={18}
                 height={18}
-                alt="Link icon"
+                alt="Download CV"
               />
-              <span className="ml-2 font-bold text-lightText transition-colors duration-500 hidden">
+              <span className="ml-2 font-bold text-lightText transition-colors duration-500">
                 Download CV
               </span>
             </a>
