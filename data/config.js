@@ -107,3 +107,14 @@ export const contact = {
   dribbble: 'Lemuel',
   linkedin: 'lemuel-lloren'
 };
+
+export const defaultAnimationConfig = {
+  distance: 50,
+  direction: 'vertical',
+  reverse: false,
+  config: { tension: 80, friction: 20 },
+  initialOpacity: 0.2,
+  animateOpacity: true,
+  scale: 1.1,
+  threshold: 0.2
+};

@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import clsx from 'clsx';
 
-function LogoWall({
+const LogoWall = ({
   items = [],
   direction = 'horizontal',
   pauseOnHover = false,
   size = 'clamp(8rem, 1rem + 30vmin, 25rem)',
   duration = '60s',
   textColor = '#ffffff'
-}) {
+}) => {
   const [isPaused, setIsPaused] = useState(false);
 
   const handleHover = (state) => pauseOnHover && setIsPaused(state);
@@ -56,6 +56,6 @@ function LogoWall({
       ))}
     </article>
   );
-}
+};
 
 export default LogoWall;
