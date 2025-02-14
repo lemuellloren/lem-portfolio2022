@@ -1,15 +1,21 @@
 import Image from 'next/image';
 import { defaultAnimationConfig, experience } from '@/data/config';
 import AnimatedContent from './AnimatedContent';
+import BlurText from './BlurText ';
 
 export default function Experience() {
   return (
     <AnimatedContent {...defaultAnimationConfig}>
       <div className="">
         <div className="overflow-x-hidden w-full">
-          <h2 className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl">
-            {experience.title}
-          </h2>
+          <BlurText
+            text={experience.title}
+            as="h2"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl"
+          />
         </div>
         <p className="text-lg">{experience.desc}</p>
         <div className="grid md:grid-cols-2 gap-4 mt-8">

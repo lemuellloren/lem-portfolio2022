@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { defaultAnimationConfig, hero } from '@/data/config';
 import { useTheme } from 'next-themes';
 import AnimatedContent from './AnimatedContent';
+import BlurText from './BlurText ';
 
 export default function Hero() {
   const { theme, setTheme } = useTheme();
@@ -33,9 +34,14 @@ export default function Hero() {
             />
           </button>
         </div>
-        <h1 className="mt-5 mb-4 font-bold text-3xl md:text-5xl tracking-tight">
-          {hero.title}
-        </h1>
+        <BlurText
+          text={hero.title}
+          as="h1"
+          delay={150}
+          animateBy="words"
+          direction="top"
+          className="mt-5 mb-4 font-bold text-3xl md:text-8xl tracking-tight"
+        />
         <h2 className="text-gray-700 dark:text-gray-200 mb-4">
           {hero.position}
         </h2>

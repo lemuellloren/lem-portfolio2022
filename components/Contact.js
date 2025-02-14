@@ -1,15 +1,21 @@
 import Image from 'next/image';
 import { contact, defaultAnimationConfig } from '@/data/config';
 import AnimatedContent from './AnimatedContent';
+import BlurText from './BlurText ';
 
 export default function Stack() {
   return (
     <AnimatedContent {...defaultAnimationConfig}>
       <div>
         <div className="overflow-x-hidden w-full">
-          <h2 className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl">
-            {contact.title}
-          </h2>
+          <BlurText
+            text={contact.title}
+            as="h2"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl"
+          />
         </div>
         <p>
           Shoot me an email:{' '}

@@ -1,15 +1,21 @@
 import { defaultAnimationConfig, stack } from '@/data/config';
 import LogoWall from './LogoWall';
 import AnimatedContent from './AnimatedContent';
+import BlurText from './BlurText ';
 
 export default function Stack() {
   return (
     <AnimatedContent {...defaultAnimationConfig}>
       <div>
         <div className="overflow-x-hidden w-full">
-          <h2 className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl">
-            {stack.title}
-          </h2>
+          <BlurText
+            text={stack.title}
+            as="h2"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl"
+          />
         </div>
         <div className="w-full flex flex-wrap -m-2">
           <LogoWall
