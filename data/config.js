@@ -87,29 +87,16 @@ export const experience = {
 export const stack = {
   title: 'My Stack',
   stack: [
-    'HTML/CSS',
-    'SASS/LESS',
-    'JavaScript',
-    'Typescript',
-    'React',
-    'GatsbyJS',
-    'NextJS',
-    'NodeJS',
-    'Shopify',
-    'Appwrite',
-    'GraphQL',
-    'TailwindCSS',
-    'Shadcn',
-    'Material UI',
-    'PHP',
-    'WordPress',
-    'Divi',
-    'Elementor',
-    'Webflow',
-    'Contentful',
-    'Git',
-    'Figma',
-    'Salesforce'
+    { logo: '/static/logos/javascript.svg', altText: 'JavaScript' },
+    { logo: '/static/logos/typescript.svg', altText: 'TypeScript' },
+    { logo: '/static/logos/react.svg', altText: 'React' },
+    { logo: '/static/logos/nodejs.svg', altText: 'Node.js' },
+    { logo: '/static/logos/wordpress.svg', altText: 'WordPress' },
+    { logo: '/static/logos/shopify.svg', altText: 'Shopify' },
+    { logo: '/static/logos/nextjs.svg', altText: 'Next.js' },
+    { logo: '/static/logos/graphql.svg', altText: 'GraphQL' },
+    { logo: '/static/logos/webflow.svg', altText: 'Webflow' },
+    { logo: '/static/logos/tailwindcss.svg', altText: 'Tailwind CSS' }
   ]
 };
 

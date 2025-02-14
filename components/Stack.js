@@ -1,4 +1,5 @@
 import { stack } from '@/data/config';
+import LogoWall from './LogoWall';
 
 export default function Stack() {
   return (
@@ -9,14 +10,13 @@ export default function Stack() {
         </h2>
       </div>
       <div className="w-full flex flex-wrap -m-2">
-        {stack.stack.map((item, index) => (
-          <span
-            className="bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center rounded-lg m-2 px-3 py-1"
-            key={index}
-          >
-            {item}
-          </span>
-        ))}
+        <LogoWall
+          items={stack.stack}
+          direction="horizontal"
+          pauseOnHover={true}
+          size="clamp(5rem, 1rem + 5vmin, 25rem)"
+          duration="60s"
+        />
       </div>
     </div>
   );
