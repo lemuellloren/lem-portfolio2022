@@ -57,9 +57,11 @@ export default function Hero() {
           direction="top"
           className="mt-5 mb-4 font-bold text-3xl md:text-8xl tracking-tight"
         />
-        <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-          <RotatingText positions={hero.position} interval={3000} />
-        </h2>
+        <RotatingText
+          positions={hero.position}
+          interval={3000}
+          spanClassName="block text-gray-700 dark:text-gray-200 mb-4 text-2xl font-bold"
+        />
         <div className="text-base">{hero.desc}</div>
         {hero.cv && hero.isActive && (
           <div className="mt-8 rounded-xl py-2 px-4 inline-flex items-center bg-gray-200 dark:bg-zinc-900">

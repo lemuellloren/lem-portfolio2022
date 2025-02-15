@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const RotatingText = ({ positions = [], interval = 2000, className = '' }) => {
+const RotatingText = ({
+  positions = [],
+  interval = 2000,
+  className = '',
+  spanClassName = ''
+}) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -20,7 +25,7 @@ const RotatingText = ({ positions = [], interval = 2000, className = '' }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
-          className="block text-2xl font-bold text-white dark:text-gray-300"
+          className={spanClassName}
         >
           {positions[index]}
         </motion.span>
