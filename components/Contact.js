@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { contact, defaultAnimationConfig } from '@/data/config';
 import AnimatedContent from './AnimatedContent';
 import BlurText from './BlurText ';
+import { GradientText } from './GradientText';
 
 export default function Stack() {
   return (
@@ -17,15 +18,18 @@ export default function Stack() {
             className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl"
           />
         </div>
-        <p>
-          Shoot me an email:{' '}
-          <a
-            className="dark:text-white text-black transition-colors duration-500"
-            href={`mailto:${contact.email}`}
-          >
-            {contact.email}
+        <div className="flex md:flex-row flex-col md:gap-2 items-start">
+          <p>Shoot me an email:</p>
+          <a href={`mailto:${contact.email}`}>
+            <GradientText
+              colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
+              animationSpeed={3}
+              showBorder={false}
+            >
+              {contact.email}
+            </GradientText>
           </a>
-        </p>
+        </div>
         <div className="flex space-x-5 mt-5 text-lightText transition-colors duration-500">
           {contact.github && (
             <a
