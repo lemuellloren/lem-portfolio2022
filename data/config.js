@@ -12,7 +12,7 @@ export const meta = {
 export const hero = {
   title: 'Lemuel Lloren',
   isActive: false,
-  position: 'Software Engineer - Frontend',
+  position: ['Software Engineer', 'Web Enthusiast', 'Hobbyist Designer'],
   cv: 'https://drive.google.com/file/d/1uDCdezem-VuYak4ZZVCr_DSQ2NDvV6c2/view?usp=sharing',
   desc: `My interests are in frontend engineering, and I love to create beautiful and performant products with delightful user experiences. 
   `

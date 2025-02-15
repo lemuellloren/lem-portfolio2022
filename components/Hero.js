@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import { defaultAnimationConfig, hero } from '@/data/config';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import AnimatedContent from './AnimatedContent';
 import BlurText from './BlurText ';
+import RotatingText from './RotatingText';
 
 export default function Hero() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -57,7 +58,7 @@ export default function Hero() {
           className="mt-5 mb-4 font-bold text-3xl md:text-8xl tracking-tight"
         />
         <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-          {hero.position}
+          <RotatingText positions={hero.position} interval={3000} />
         </h2>
         <div className="text-base">{hero.desc}</div>
         {hero.cv && hero.isActive && (
@@ -74,9 +75,6 @@ export default function Hero() {
                 height={18}
                 alt="Download CV"
               />
-              <span className="ml-2 font-bold text-lightText transition-colors duration-500">
-                Download CV
-              </span>
             </a>
           </div>
         )}
