@@ -18,51 +18,46 @@ export default function Experience() {
           />
         </div>
         <p className="text-lg">{experience.desc}</p>
-        <div className="grid md:grid-cols-2 gap-4 mt-8">
-          {experience.experiences.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="dark:bg-dark bg-white h-full p-5 mx-auto border border-lightText mb-4 rounded-xl w-full"
-              >
-                <div className="flex items-center flex-wrap gap-4 mb-5">
-                  <div>
-                    <img
-                      className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                      src={item.logo}
-                      alt={item.company}
-                    />
-                  </div>
-                  <div className="company-name">
-                    <h3>{item.company}</h3>
-                  </div>
-                  <div className="company-url">
-                    {item.link && (
-                      <a
-                        href={item.link}
-                        className="flex items-center  py-1 px-3"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <Image
-                          src="/static/icons/external-link.svg"
-                          width={18}
-                          height={18}
-                          alt="Link icon"
-                        />
-                      </a>
-                    )}
-                  </div>
+
+        <ul role="list" className="flex gap-4 flex-col mt-8">
+          {experience.experiences.map((item, index) => (
+            <li
+              key={index}
+              className="flex justify-between gap-4 dark:bg-dark bg-white rounded-lg p-5"
+            >
+              <div className="flex min-w-0 gap-x-4">
+                <img
+                  alt={item.company}
+                  src={item.logo}
+                  className="w-8 h-8 rounded-full flex-none rounded-full bg-gray-50"
+                />
+                <div className="min-w-0 flex-auto">
+                  <h3>{item.company}</h3>
+                  <h4 className="mt-1 text-sm">{item.position}</h4>
+                  <p className="mt-1 text-sm">{item.year}</p>
                 </div>
-                <div className="mb-2">
-                  <div className="font-bold text-sm">{item.position}</div>
-                  <div className="text-sm">{item.year}</div>
-                </div>
-                <p className="text-sm mb-5">{item.description}</p>
               </div>
-            );
-          })}
-        </div>
+
+              <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                {item.link && (
+                  <a
+                    href={item.link}
+                    className="flex items-center py-1 px-3"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src="/static/icons/external-link.svg"
+                      width={18}
+                      height={18}
+                      alt="Link icon"
+                    />
+                  </a>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </AnimatedContent>
   );
