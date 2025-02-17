@@ -20,34 +20,75 @@ export const hero = {
 
 export const projects = {
   title: 'My Projects',
-  desc: "Here are some of my favorite projects that I've worked on.",
+  desc: '',
   projects: [
     {
+      title: 'CarePulse Patient Management System',
+      description: 'Next.js, Appwrite, Twilio, TypeScript, TailwindCSS',
+      link: '',
+      github:
+        'https://github.com/lemuellloren/healthcare-patient-management-system'
+    },
+    {
       title: 'Owner Dashboard Renewal and Relisting',
-      description: "Poplar's owner dashboard: PERN stack",
+      description: 'PostgreSQL, Node.js, Express, React, TypeScript',
       link: 'https://www.poplarhomes.com/login',
       github: ''
     },
     {
+      title: 'Homyz',
+      description: 'React, Next.js, Chakra UI, RapidAPI',
+      link: 'https://homyz-app.vercel.app/',
+      github: 'lemuellloren/modern-real-estate-app'
+    },
+    {
       title: 'ViewQwest',
-      description:
-        'ViewQwest portal and website: WordPress, Elementor, Vue, TS, Laravel',
+      description: 'WordPress, Elementor, Vue, TS, Laravel',
       link: 'https://viewqwest.com/',
       github: ''
     },
     {
-      title: 'Homyz',
-      description:
-        'Modern real estate app: React, Next.js, Chakra UI, RapidAPI',
-      link: 'https://homyz-app.vercel.app/',
-      github: 'lemuellloren/modern-real-estate-app'
+      title: 'Development Entrepreneurship',
+      description: 'Website: WordPress and Divi',
+      link: 'https://developmententrepreneurship.org/',
+      github: ''
+    },
+    {
+      title: 'Javier Project Managers',
+      description: 'Website: WordPress and Elementor',
+      link: 'https://jpm.com.ph/',
+      github: ''
+    },
+    {
+      title: 'SLA-PH',
+      description: 'Website: WordPress and Divi',
+      link: 'https://stemleadershipalliance.ph/',
+      github: ''
+    },
+    {
+      title: 'Consuelo ',
+      description: 'Website: WordPress and Divi',
+      link: 'https://consuelo.org/',
+      github: ''
+    },
+    {
+      title: 'Atout ',
+      description: 'Website: WordPress and Elementor',
+      link: 'https://atout.sg/',
+      github: ''
+    },
+    {
+      title: 'BearGrip ',
+      description: 'Website: Shopify',
+      link: 'https://beargrip.co.uk/',
+      github: ''
     }
   ]
 };
 
 export const experience = {
   title: 'My Experience',
-  desc: "Where I've Worked",
+  desc: '',
   experiences: [
     {
       company: 'Harvey Norman',

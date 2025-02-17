@@ -6,7 +6,7 @@ import BlurText from './BlurText ';
 export default function Experience() {
   return (
     <AnimatedContent {...defaultAnimationConfig}>
-      <div className="">
+      <div>
         <div className="overflow-x-hidden w-full">
           <BlurText
             text={experience.title}
