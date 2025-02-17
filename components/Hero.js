@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <AnimatedContent {...defaultAnimationConfig}>
-      <div className="mb-20">
+      <header className="mb-20">
         <div className="flex flex-row items-center justify-between w-full">
           <div className="w-20 h-20 rounded-full relative overflow-hidden">
             <Image
@@ -80,7 +80,7 @@ export default function Hero() {
             </a>
           </div>
         )}
-      </div>
+      </header>
     </AnimatedContent>
   );
 }

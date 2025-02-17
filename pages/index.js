@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
 import Head from 'next/head';
 import Hero from '@/components/Hero';
@@ -26,6 +27,7 @@ export default function Index() {
             <Stack />
             <Contact />
           </div>
+          <Footer />
         </div>
       </SpotlightHover>
     </>
