@@ -33,7 +33,7 @@ export default function Experience() {
                 />
                 <div className="min-w-0 flex-auto">
                   <h3>{item.company}</h3>
-                  <h4 className="mt-1 text-sm">{item.position}</h4>
+                  <p className="mt-1 text-sm font-bold">{item.position}</p>
                   <p className="mt-1 text-sm">{item.year}</p>
                 </div>
               </div>
