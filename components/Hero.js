@@ -5,6 +5,7 @@ import Image from 'next/image';
 import AnimatedContent from './AnimatedContent';
 import BlurText from './BlurText ';
 import RotatingText from './RotatingText';
+import Waves from './Waves';
 
 export default function Hero() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -57,12 +58,30 @@ export default function Hero() {
           direction="top"
           className="mt-5 mb-4 font-bold text-3xl md:text-8xl tracking-tight"
         />
-        <RotatingText
-          positions={hero.position}
-          interval={3000}
-          spanClassName="block text-gray-700 dark:text-gray-200 mb-4 text-2xl font-bold"
-        />
-        <div className="text-base">{hero.desc}</div>
+
+        <div className="relative mt-8 h-60 w-full">
+          <Waves
+            lineColor="#fff"
+            backgroundColor="#000"
+            waveSpeedX={0.02}
+            waveSpeedY={0.01}
+            waveAmpX={40}
+            waveAmpY={20}
+            friction={0.9}
+            tension={0.01}
+            maxCursorMove={120}
+            xGap={12}
+            yGap={36}
+          />
+        </div>
+        <div className="mt-8">
+          <RotatingText
+            positions={hero.position}
+            interval={3000}
+            spanClassName="block text-gray-700 dark:text-gray-200 mb-4 text-3xl font-bold"
+          />
+          <div className="text-xl">{hero.desc}</div>
+        </div>
         {hero.cv && hero.isActive && (
           <div className="mt-8 rounded-xl py-2 px-4 inline-flex items-center bg-gray-200 dark:bg-zinc-900">
             <a

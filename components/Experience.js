@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { defaultAnimationConfig, experience } from '@/data/config';
 import AnimatedContent from './AnimatedContent';
 import BlurText from './BlurText ';
+import { defaultAnimationConfig, experience } from '@/data/config';
 
 export default function Experience() {
   return (
@@ -18,31 +18,46 @@ export default function Experience() {
           />
         </div>
         <p className="text-lg">{experience.desc}</p>
-
         <ul role="list" className="flex gap-4 flex-col mt-8">
           {experience.experiences.map((item, index) => (
             <li
               key={index}
-              className="flex justify-between gap-4 dark:bg-dark bg-white rounded-lg p-5"
+              className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gray-200 dark:bg-zinc-900 rounded-lg p-5 w-full"
             >
-              <div className="flex min-w-0 gap-x-4">
+              <div className="flex items-center gap-x-4 w-full sm:w-auto">
                 <img
                   alt={item.company}
                   src={item.logo}
-                  className="w-8 h-8 rounded-full flex-none rounded-full bg-gray-50"
+                  className="w-10 h-10 rounded-full bg-gray-50"
                 />
-                <div className="min-w-0 flex-auto">
-                  <h3>{item.company}</h3>
-                  <p className="mt-1 text-sm font-bold">{item.position}</p>
-                  <p className="mt-1 text-sm">{item.year}</p>
+                <div className="min-w-0">
+                  <h3 className="font-semibold">{item.company}</h3>
+                  <p className="mt-1 text-sm font-bold flex flex-wrap gap-2">
+                    {item.position}{' '}
+                    <span className="text-gray-500">{item.year}</span>
+                  </p>
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      className="sm:hidden flex items-center mt-2"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src="/static/icons/external-link.svg"
+                        width={18}
+                        height={18}
+                        alt="Link icon"
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
-
-              <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                {item.link && (
+              {item.link && (
+                <div className="hidden sm:flex">
                   <a
                     href={item.link}
-                    className="flex items-center py-1 px-3"
+                    className="flex items-center"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -53,8 +68,8 @@ export default function Experience() {
                       alt="Link icon"
                     />
                   </a>
-                )}
-              </div>
+                </div>
+              )}
             </li>
           ))}
         </ul>

@@ -28,7 +28,7 @@ const LogoWall = ({
     items.map((item, idx) => (
       <div
         key={`${keyPrefix}-${idx}`}
-        className="logo-wrap flex items-center dark:bg-dark bg-white rounded-lg  p-2"
+        className="logo-wrap flex items-center bg-gray-200 dark:bg-zinc-900 rounded-lg  p-2"
       >
         <Image
           className="h-12 w-12 object-contain"
