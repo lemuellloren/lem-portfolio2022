@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import AnimatedContent from './AnimatedContent';
 import BlurText from './BlurText ';
@@ -18,11 +19,14 @@ export default function Experience() {
           />
         </div>
         <p className="text-lg">{experience.desc}</p>
+
         <ul role="list" className="flex gap-4 flex-col mt-8">
           {experience.experiences.map((item, index) => (
-            <li
+            <motion.li
               key={index}
-              className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gray-200 dark:bg-zinc-900 rounded-lg p-5 w-full"
+              whileHover={{ scale: 1.03, cursor: 'pointer' }}
+              transition={{ duration: 0.3 }}
+              className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gray-200 dark:bg-zinc-900 rounded-lg p-5 w-full transition-transform duration-300"
             >
               <div className="flex items-center gap-x-4 w-full sm:w-auto">
                 <img
@@ -36,6 +40,7 @@ export default function Experience() {
                     {item.position}{' '}
                     <span className="text-gray-500">{item.year}</span>
                   </p>
+
                   {item.link && (
                     <a
                       href={item.link}
@@ -53,6 +58,7 @@ export default function Experience() {
                   )}
                 </div>
               </div>
+
               {item.link && (
                 <div className="hidden sm:flex">
                   <a
@@ -70,7 +76,7 @@ export default function Experience() {
                   </a>
                 </div>
               )}
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>

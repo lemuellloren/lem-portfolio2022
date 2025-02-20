@@ -49,7 +49,8 @@ export default function Projects() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.4, ease: 'easeInOut' }}
-                className="flex flex-col sm:flex-row justify-between gap-4 bg-gray-200 dark:bg-zinc-900 rounded-lg p-5"
+                whileHover={{ scale: 1.03, cursor: 'pointer' }}
+                className="flex flex-col sm:flex-row justify-between gap-4 bg-gray-200 dark:bg-zinc-900 rounded-lg p-5 transition-transform duration-300"
               >
                 <div className="min-w-0 flex-auto">
                   <h3 className="text-lg font-semibold">{item.title}</h3>
