@@ -1,10 +1,19 @@
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { contact, defaultAnimationConfig } from '@/data/config';
 import AnimatedContent from './AnimatedContent';
+import VariableProximity from './VariableProximity';
+import GradientText from './GradientText';
 import BlurText from './BlurText ';
-import { GradientText } from './GradientText';
 
 export default function Stack() {
+  const containerRef = useRef(null);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <AnimatedContent {...defaultAnimationConfig}>
       <div>
@@ -18,19 +27,45 @@ export default function Stack() {
             className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max text-2xl md:text-4xl"
           />
         </div>
-        <div className="flex md:flex-row flex-col md:gap-2 items-start">
-          <p>Shoot me an email:</p>
-          <a href={`mailto:${contact.email}`}>
-            <GradientText
-              colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
-              animationSpeed={3}
-              showBorder={false}
+
+        <div className="f">
+          {isMounted && (
+            <div
+              className="mt-8"
+              ref={containerRef}
+              style={{ position: 'relative' }}
             >
-              {contact.email}
-            </GradientText>
-          </a>
+              <VariableProximity
+                as="h2"
+                label="Email me"
+                className="font-bold text-3xl md:text-8xl tracking-tight cursor-pointer"
+                fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                containerRef={containerRef}
+                radius={100}
+                falloff="linear"
+              />
+            </div>
+          )}
+
+          {isMounted ? (
+            <a href={`mailto:${contact.email}`}>
+              <GradientText
+                as="p"
+                colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
+                animationSpeed={5}
+                showBorder={false}
+                className="text-xl md:text-3xl font-bold"
+              >
+                {contact.email}
+              </GradientText>
+            </a>
+          ) : (
+            <p className="text-xl md:text-3xl font-bold">{contact.email}</p>
+          )}
         </div>
-        <div className="flex space-x-5 mt-5 text-lightText transition-colors duration-500">
+
+        <div className="flex space-x-5 mt-5 text-lightText transition-colors duration-500 hover:underline">
           {contact.github && (
             <a
               href={`https://github.com/${contact.github}`}

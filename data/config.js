@@ -142,7 +142,7 @@ export const stack = {
 };
 
 export const contact = {
-  title: 'Contact Me',
+  title: 'Contact',
   email: 'lemuelpaconlloren@gmail.com',
   github: 'lemuellloren',
   dribbble: 'Lemuel',
