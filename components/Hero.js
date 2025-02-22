@@ -1,17 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { defaultAnimationConfig, hero } from '@/data/config';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import AnimatedContent from './AnimatedContent';
-import BlurText from './BlurText ';
 import RotatingText from './RotatingText';
 import Waves from './Waves';
 import Iridescence from './Iridescence';
+import VariableProximity from './VariableProximity';
 
 export default function Hero() {
   const { theme, setTheme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-
   useEffect(() => {
     setMounted(true);
     if (!localStorage.getItem('theme')) {
@@ -19,6 +18,7 @@ export default function Hero() {
     }
   }, [setTheme]);
 
+  const containerRef = useRef(null);
   const currentTheme = mounted
     ? theme === 'system'
       ? systemTheme
@@ -55,19 +55,28 @@ export default function Hero() {
             </button>
           )}
         </div>
-        <BlurText
-          text={hero.title}
-          as="h1"
-          delay={150}
-          animateBy="words"
-          direction="top"
-          className="mt-5 mb-4 font-bold text-3xl md:text-8xl tracking-tight"
-        />
+        <div
+          className="mt-8"
+          ref={containerRef}
+          style={{ position: 'relative' }}
+        >
+          <VariableProximity
+            label={'Lemuel Lloren'}
+            className={
+              'font-bold text-3xl md:text-8xl tracking-tight cursor-pointer'
+            }
+            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+            toFontVariationSettings="'wght' 1000, 'opsz' 40"
+            containerRef={containerRef}
+            radius={100}
+            falloff="linear"
+          />
+        </div>
 
         {mounted &&
           currentTheme &&
           (currentTheme === 'dark' ? (
-            <div className="relative my-8 h-60 w-full">
+            <div className="relative my-5 h-60 w-full">
               <Waves
                 lineColor="#fff"
                 backgroundColor="#000"
@@ -83,7 +92,7 @@ export default function Hero() {
               />
             </div>
           ) : (
-            <div className="relative my-8 h-60 w-full">
+            <div className="relative my-5 h-60 w-full">
               <Iridescence
                 color={[1, 1, 1]}
                 mouseReact={true}
