@@ -322,3 +322,9 @@ ul {
 .char {
   display: inline-block;
 }
+
+/* Iridescence */
+.iridescence-container {
+  width: 100%;
+  height: 100%;
+}

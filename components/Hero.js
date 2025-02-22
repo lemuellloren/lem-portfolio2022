@@ -6,6 +6,7 @@ import AnimatedContent from './AnimatedContent';
 import BlurText from './BlurText ';
 import RotatingText from './RotatingText';
 import Waves from './Waves';
+import Iridescence from './Iridescence';
 
 export default function Hero() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -18,7 +19,11 @@ export default function Hero() {
     }
   }, [setTheme]);
 
-  const currentTheme = theme === 'system' ? systemTheme : theme;
+  const currentTheme = mounted
+    ? theme === 'system'
+      ? systemTheme
+      : theme
+    : null;
   const isThemeIcon = currentTheme === 'light' ? 'moon.svg' : 'sun.svg';
 
   return (
@@ -34,7 +39,7 @@ export default function Hero() {
               alt="Lemuel Lloren"
             />
           </div>
-          {mounted && (
+          {mounted && currentTheme && (
             <button
               className="cursor-pointer toggleTheme w-9 h-9 bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
               onClick={() =>
@@ -59,22 +64,36 @@ export default function Hero() {
           className="mt-5 mb-4 font-bold text-3xl md:text-8xl tracking-tight"
         />
 
-        <div className="relative mt-8 h-60 w-full">
-          <Waves
-            lineColor="#fff"
-            backgroundColor="#000"
-            waveSpeedX={0.02}
-            waveSpeedY={0.01}
-            waveAmpX={40}
-            waveAmpY={20}
-            friction={0.9}
-            tension={0.01}
-            maxCursorMove={120}
-            xGap={12}
-            yGap={36}
-          />
-        </div>
-        <div className="mt-8">
+        {mounted &&
+          currentTheme &&
+          (currentTheme === 'dark' ? (
+            <div className="relative my-8 h-60 w-full">
+              <Waves
+                lineColor="#fff"
+                backgroundColor="#000"
+                waveSpeedX={0.02}
+                waveSpeedY={0.01}
+                waveAmpX={40}
+                waveAmpY={20}
+                friction={0.9}
+                tension={0.01}
+                maxCursorMove={120}
+                xGap={12}
+                yGap={36}
+              />
+            </div>
+          ) : (
+            <div className="relative my-8 h-60 w-full">
+              <Iridescence
+                color={[1, 1, 1]}
+                mouseReact={true}
+                amplitude={0.1}
+                speed={1.0}
+              />
+            </div>
+          ))}
+
+        <div>
           <RotatingText
             positions={hero.position}
             interval={3000}
@@ -82,6 +101,7 @@ export default function Hero() {
           />
           <div className="text-xl">{hero.desc}</div>
         </div>
+
         {hero.cv && hero.isActive && (
           <div className="mt-8 rounded-xl py-2 px-4 inline-flex items-center bg-gray-200 dark:bg-zinc-900">
             <a
