@@ -6,6 +6,7 @@ import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Stack from '@/components/Stack';
 import { meta } from '@/data/config';
+import Navigation from '@/components/Navigation';
 
 export default function Index() {
   return (
@@ -14,7 +15,8 @@ export default function Index() {
         <title>{meta.title}</title>
       </Head>
 
-      <div className="p-6 lg:p-20 max-w-4xl m-auto w-full">
+      <div className="p-6 lg:p-20 m-auto w-full">
+        <Navigation />
         <Hero />
         <div className="p-0 space-y-10">
           <Projects />
