@@ -11,10 +11,14 @@ export const meta = {
 
 export const hero = {
   title: 'Lemuel Lloren',
+  profile: '/static/profile.png',
   isActive: false,
   position: ['Software Engineer', 'Web Enthusiast', 'Hobbyist Designer'],
   cv: 'https://drive.google.com/file/d/1uDCdezem-VuYak4ZZVCr_DSQ2NDvV6c2/view?usp=sharing',
-  desc: `My interests are in frontend engineering, and I love to create beautiful and performant products with delightful user experiences. 
+  description: `
+    Based in Davao City, Im a self-taught developer driven to
+    create functional and aesthetically pleasing designs through
+    continuous learning and a passion for tackling new challenges. 
   `
 };
 

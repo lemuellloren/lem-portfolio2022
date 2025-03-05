@@ -18,12 +18,9 @@ export default function Index() {
       <div className="p-6 lg:p-20 m-auto w-full">
         <Navigation />
         <Hero />
-        <div className="p-0 space-y-10">
-          <Projects />
-          <Experience />
-          <Stack />
+        {/* <div className="p-0 space-y-10">
           <Contact />
-        </div>
+        </div> */}
         <Footer />
       </div>
     </>
