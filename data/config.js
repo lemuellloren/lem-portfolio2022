@@ -22,6 +22,16 @@ export const hero = {
   `
 };
 
+export const about = {
+  title: 'about me',
+  descriptions: [
+    'Combining my expertise in UI/UX design and software development,',
+    'I create intuitive and visually compelling user experiences,',
+    'fueled by a passion for the intersection of creativity and technology,',
+    'and a dedication to user-centric design.'
+  ]
+};
+
 export const projects = {
   title: 'My Projects',
   desc: '',

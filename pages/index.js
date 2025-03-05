@@ -7,6 +7,7 @@ import Projects from '@/components/Projects';
 import Stack from '@/components/Stack';
 import { meta } from '@/data/config';
 import Navigation from '@/components/Navigation';
+import { About } from '@/components/About';
 
 export default function Index() {
   return (
@@ -18,9 +19,9 @@ export default function Index() {
       <div className="p-6 lg:p-20 m-auto w-full">
         <Navigation />
         <Hero />
-        {/* <div className="p-0 space-y-10">
-          <Contact />
-        </div> */}
+        <div className="p-0 space-y-10">
+          <About />
+        </div>
         <Footer />
       </div>
     </>

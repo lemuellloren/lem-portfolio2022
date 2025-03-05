@@ -15,7 +15,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-full text-center px-4">
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-full text-center">
         <h1 className="text-8xl md:text-[156px] text-[80px] font-normal text-black dark:text-white text-center">
           {hero.title}
         </h1>
