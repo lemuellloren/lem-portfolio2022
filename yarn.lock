@@ -1711,13 +1711,13 @@ fraction.js@^4.2.0:
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
-framer-motion@^12.4.2:
-  version "12.4.2"
-  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-12.4.2.tgz"
-  integrity sha512-pW307cQKjDqEuO1flEoIFf6TkuJRfKr+c7qsHAJhDo4368N/5U8/7WU8J+xhd9+gjmOgJfgp+46evxRRFM39dA==
+framer-motion@^12.4.10:
+  version "12.4.10"
+  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-12.4.10.tgz"
+  integrity sha512-3Msuyjcr1Pb5hjkn4EJcRe1HumaveP0Gbv4DBMKTPKcV/1GSMkQXj+Uqgneys+9DPcZM18Hac9qY9iUEF5LZtg==
   dependencies:
-    motion-dom "^12.0.0"
-    motion-utils "^12.0.0"
+    motion-dom "^12.4.10"
+    motion-utils "^12.4.10"
     tslib "^2.4.0"
 
 fs.realpath@^1.0.0:
@@ -2366,17 +2366,17 @@ minimist@^1.2.0, minimist@^1.2.6:
   resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.7.tgz"
   integrity sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==
 
-motion-dom@^12.0.0:
-  version "12.0.0"
-  resolved "https://registry.npmjs.org/motion-dom/-/motion-dom-12.0.0.tgz"
-  integrity sha512-CvYd15OeIR6kHgMdonCc1ihsaUG4MYh/wrkz8gZ3hBX/uamyZCXN9S9qJoYF03GqfTt7thTV/dxnHYX4+55vDg==
+motion-dom@^12.4.10:
+  version "12.4.10"
+  resolved "https://registry.npmjs.org/motion-dom/-/motion-dom-12.4.10.tgz"
+  integrity sha512-ISP5u6FTceoD6qKdLupIPU/LyXBrxGox+P2e3mBbm1+pLdlBbwv01YENJr7+1WZnW5ucVKzFScYsV1eXTCG4Xg==
   dependencies:
-    motion-utils "^12.0.0"
+    motion-utils "^12.4.10"
 
-motion-utils@^12.0.0:
-  version "12.0.0"
-  resolved "https://registry.npmjs.org/motion-utils/-/motion-utils-12.0.0.tgz"
-  integrity sha512-MNFiBKbbqnmvOjkPyOKgHUp3Q6oiokLkI1bEwm5QA28cxMZrv0CbbBGDNmhF6DIXsi1pCQBSs0dX8xjeER1tmA==
+motion-utils@^12.4.10:
+  version "12.4.10"
+  resolved "https://registry.npmjs.org/motion-utils/-/motion-utils-12.4.10.tgz"
+  integrity sha512-NPwZd94V013SwRf++jMrk2+HEBgPkeIE2RiOzhAuuQlqxMJPkKt/LXVh6Upl+iN8oarSGD2dlY5/bqgsYXDABA==
 
 ms@^2.1.1, ms@2.1.2:
   version "2.1.2"

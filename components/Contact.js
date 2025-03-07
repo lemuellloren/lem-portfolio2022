@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { contact, defaultAnimationConfig } from '@/data/config';
-import AnimatedContent from './AnimatedContent';
-import VariableProximity from './VariableProximity';
-import GradientText from './GradientText';
-import BlurText from './BlurText ';
+import AnimatedContent from './animated/AnimatedContent';
+import VariableProximity from './animated/VariableProximity';
+import GradientText from './animated/GradientText';
+import BlurText from './animated/BlurText ';
 
 export default function Stack() {
   const containerRef = useRef(null);

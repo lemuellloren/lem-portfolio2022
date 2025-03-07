@@ -1,7 +1,7 @@
 import { defaultAnimationConfig, stack } from '@/data/config';
-import LogoWall from './LogoWall';
-import AnimatedContent from './AnimatedContent';
-import BlurText from './BlurText ';
+import LogoWall from './animated/LogoWall';
+import AnimatedContent from './animated/AnimatedContent';
+import BlurText from './animated/BlurText ';
 
 export default function Stack() {
   return (

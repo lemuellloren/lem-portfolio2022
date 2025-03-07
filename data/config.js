@@ -25,9 +25,9 @@ export const hero = {
 export const about = {
   title: 'about me',
   descriptions: [
-    'Combining my expertise in UI/UX design and software development,',
-    'I create intuitive and visually compelling user experiences,',
-    'fueled by a passion for the intersection of creativity and technology,',
+    'Combining my expertise in software development and UI/UX design,',
+    'I create intuitive and visually compelling user experiences, fueled by',
+    'a passion for the intersection of creativity and technology,',
     'and a dedication to user-centric design.'
   ]
 };
@@ -35,9 +35,11 @@ export const about = {
 export const projects = {
   title: 'My Projects',
   desc: '',
+  scrollVelocityTexts: ['selected projects', 'digital creations'],
   projects: [
     {
       title: 'CarePulse Patient Management System',
+      image: '/static/covers/real-estate.jpg',
       description: 'Next.js, Appwrite, Twilio, TypeScript, TailwindCSS',
       link: '',
       github:
@@ -45,55 +47,64 @@ export const projects = {
     },
     {
       title: 'Owner Dashboard Renewal and Relisting',
+      image: '/static/covers/real-estate.jpg',
       description: 'PostgreSQL, Node.js, Express, React, TypeScript',
       link: 'https://www.poplarhomes.com/login',
       github: ''
     },
     {
       title: 'Homyz',
+      image: '/static/covers/real-estate.jpg',
       description: 'React, Next.js, Chakra UI, RapidAPI',
       link: 'https://homyz-app.vercel.app/',
       github: 'lemuellloren/modern-real-estate-app'
     },
     {
       title: 'ViewQwest',
+      image: '/static/covers/real-estate.jpg',
       description: 'WordPress, Elementor, Vue, TS, Laravel',
       link: 'https://viewqwest.com/',
       github: ''
     },
     {
       title: 'Development Entrepreneurship',
-      description: 'Website: WordPress and Divi',
+      image: '/static/covers/real-estate.jpg',
+      description: 'WordPress and Divi',
       link: 'https://developmententrepreneurship.org/',
       github: ''
     },
     {
       title: 'Javier Project Managers',
-      description: 'Website: WordPress and Elementor',
+      image: '/static/covers/real-estate.jpg',
+      description: 'WordPress and Elementor',
       link: 'https://jpm.com.ph/',
       github: ''
     },
     {
       title: 'SLA-PH',
-      description: 'Website: WordPress and Divi',
+      image: '/static/covers/real-estate.jpg',
+      description: 'WordPress and Divi',
       link: 'https://stemleadershipalliance.ph/',
       github: ''
     },
     {
       title: 'Consuelo ',
-      description: 'Website: WordPress and Divi',
+      image: '/static/covers/real-estate.jpg',
+      description: 'WordPress and Divi',
       link: 'https://consuelo.org/',
       github: ''
     },
     {
       title: 'Atout ',
-      description: 'Website: WordPress and Elementor',
+      image: '/static/covers/real-estate.jpg',
+      description: 'WordPress and Elementor',
       link: 'https://atout.sg/',
       github: ''
     },
     {
       title: 'BearGrip ',
-      description: 'Website: Shopify',
+      image: '/static/covers/real-estate.jpg',
+      description: 'Shopify',
       link: 'https://beargrip.co.uk/',
       github: ''
     }

@@ -21,7 +21,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   @apply dark:text-white text-black font-bold  transition-colors duration-500;
 }
 
@@ -329,3 +330,55 @@ ul {
   white-space: nowrap;
   border: 0;
 }
+
+/* Scroll Velocity */
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  /* font-size: 2.25rem; */
+  /* font-weight: bold; */
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.scroller span {
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+/* Scale Image Gallery  */
+.double {
+  display: flex;
+  margin-top: 10vh;
+  height: 45vw;
+}
+.double .imageContainer:nth-of-type(1) {
+  width: 66.66%;
+}
+.double .imageContainer:nth-of-type(2) {
+  width: 33.33%;
+}
+.double .imageContainer .stretchyWrapper img {
+  object-fit: cover;
+}
+.double:nth-child(even) .imageContainer:nth-of-type(1) {
+  width: 33.33%;
+}
+.double:nth-child(even) .imageContainer:nth-of-type(2) {
+  width: 66.66%;
+}
+
+

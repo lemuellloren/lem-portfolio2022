@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import AnimatedContent from './AnimatedContent';
-import BlurText from './BlurText ';
+import AnimatedContent from './animated/AnimatedContent';
+import BlurText from './animated/BlurText ';
 import { defaultAnimationConfig, experience } from '@/data/config';
 
 export default function Experience() {
