@@ -7,7 +7,7 @@ export const Projects = () => {
   return (
     <section>
       <ScrollVelocity texts={projects.scrollVelocityTexts} velocity={100} />
-      <div className="gallery">
+      <div>
         <Double projects={[projects.projects[0], projects.projects[1]]} />
         <Double
           projects={[projects.projects[2], projects.projects[3]]}

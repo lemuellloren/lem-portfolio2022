@@ -55,9 +55,13 @@ export default function Double({ projects, reversed }) {
         <div className="stretchyWrapper">
           <img src={projects[0].image} alt={projects[0].title} />
         </div>
-        <div className="mt-8">
-          <h3 className="md:text-2xl font-normal">{projects[0].title}</h3>
-          <p className="font-normal">{projects[0].description}</p>
+        <div className="p-4">
+          <h3 className="text-xs md:text-4xl font-normal">
+            {projects[0].title}
+          </h3>
+          <p className="text-xs md:text-lg font-normal">
+            {projects[0].description}
+          </p>
         </div>
       </a>
 
@@ -71,9 +75,13 @@ export default function Double({ projects, reversed }) {
         <div className="stretchyWrapper">
           <img src={projects[1].image} alt={projects[1].title} />
         </div>
-        <div className="mt-8">
-          <h3 className="md:text-2xl font-normal">{projects[1].title}</h3>
-          <p className="font-normal">{projects[1].description}</p>
+        <div className="p-4">
+          <h3 className="text-xs md:text-4xl font-normal">
+            {projects[1].title}
+          </h3>
+          <p className="text-xs md:text-lg font-normal">
+            {projects[1].description}
+          </p>
         </div>
       </a>
     </div>
