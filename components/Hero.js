@@ -19,32 +19,6 @@ export default function Hero() {
         <h1 className="text-8xl md:text-[156px] text-[80px] font-normal text-black dark:text-white text-left">
           {hero.title}
         </h1>
-        <div className="flex justify-between text-lg text-black dark:text-white">
-          {contact.github && (
-            <a
-              href={`https://github.com/${contact.github}`}
-              className="m-0 text-center text-black dark:text-white"
-            >
-              [github]
-            </a>
-          )}
-          {contact.linkedin && (
-            <a
-              href={`https://linkedin.com/in/${contact.linkedin}`}
-              className="m-0 text-center text-black dark:text-white"
-            >
-              [linkedin]
-            </a>
-          )}
-          {contact.dribbble && (
-            <a
-              href={`https://dribbble.com/${contact.dribbble}`}
-              className="m-0 text-center text-black dark:text-white"
-            >
-              [dribbble]
-            </a>
-          )}
-        </div>
       </div>
     </AnimatedContent>
   );

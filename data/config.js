@@ -35,11 +35,11 @@ export const about = {
 export const projects = {
   title: 'My Projects',
   desc: '',
-  scrollVelocityTexts: ['selected projects', 'digital creations'],
+  scrollVelocityTexts: ['selected projects ✨', 'digital creations 🏆'],
   projects: [
     {
       title: 'CarePulse Patient Management System',
-      image: '/static/covers/real-estate.jpg',
+      image: '/static/covers/cover-homyz.png',
       description: 'Next.js, Appwrite, Twilio, TypeScript, TailwindCSS',
       link: '',
       github:
@@ -47,7 +47,7 @@ export const projects = {
     },
     {
       title: 'Owner Dashboard Renewal and Relisting',
-      image: '/static/covers/real-estate.jpg',
+      image: '/static/covers/cover-evernest.png',
       description: 'PostgreSQL, Node.js, Express, React, TypeScript',
       link: 'https://www.poplarhomes.com/login',
       github: ''
@@ -124,7 +124,7 @@ export const experience = {
       logo: '/static/logos/harvey-norman.jpg'
     },
     {
-      company: 'Poplar Homes',
+      company: 'Evernest, formerly Poplar Homes',
       description: 'A Silicon Valley based PropTech company',
       year: 'April 2022 - November 2022',
       position: 'Junior Software Engineer',
