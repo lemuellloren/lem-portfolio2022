@@ -124,7 +124,7 @@ export const experience = {
       logo: '/static/logos/harvey-norman.jpg'
     },
     {
-      company: 'Evernest, formerly Poplar Homes',
+      company: 'Poplar Homes',
       description: 'A Silicon Valley based PropTech company',
       year: 'April 2022 - November 2022',
       position: 'Junior Software Engineer',

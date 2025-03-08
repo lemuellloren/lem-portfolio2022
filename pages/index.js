@@ -2,12 +2,12 @@ import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
 import Head from 'next/head';
 import Hero from '@/components/Hero';
-import Experience from '@/components/Experience';
 import Stack from '@/components/Stack';
 import { meta } from '@/data/config';
 import Navigation from '@/components/Navigation';
 import { About } from '@/components/About';
 import { Projects } from '@/components/Projects';
+import { Experience } from '@/components/Experience';
 
 export default function Index() {
   return (
@@ -22,6 +22,7 @@ export default function Index() {
         <div className="p-0 space-y-10">
           <About />
           <Projects />
+          <Experience />
         </div>
         <Footer />
       </div>
