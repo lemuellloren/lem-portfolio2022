@@ -1,89 +1,64 @@
 'use client';
-import { useRef } from 'react';
+
+import { useRef, useState } from 'react';
 
 export default function Double({ projects, reversed }) {
-  const firstImage = useRef(null);
-  const secondImage = useRef(null);
+  const imageRefs = useRef([]);
   let requestAnimationFrameId = null;
   let xPercent = reversed ? 100 : 0;
   let currentXPercent = reversed ? 100 : 0;
   const speed = 0.15;
 
   const manageMouseMove = (e) => {
-    const { clientX } = e;
-    xPercent = (clientX / window.innerWidth) * 100;
-
-    if (!requestAnimationFrameId) {
-      requestAnimationFrameId = window.requestAnimationFrame(animate);
-    }
+    xPercent = (e.clientX / window.innerWidth) * 100;
+    if (!requestAnimationFrameId)
+      requestAnimationFrameId = requestAnimationFrame(animate);
   };
 
   const animate = () => {
-    //Add easing to the animation
-    const xPercentDelta = xPercent - currentXPercent;
-    currentXPercent = currentXPercent + xPercentDelta * speed;
+    currentXPercent += (xPercent - currentXPercent) * speed;
 
-    //Change width of images between 33.33% and 66.66% based on cursor
     const firstImagePercent = 66.66 - currentXPercent * 0.33;
     const secondImagePercent = 33.33 + currentXPercent * 0.33;
-    console.log(secondImagePercent);
-    firstImage.current.style.width = `${firstImagePercent}%`;
-    secondImage.current.style.width = `${secondImagePercent}%`;
 
-    if (Math.round(xPercent) == Math.round(currentXPercent)) {
-      window.cancelAnimationFrame(requestAnimationFrameId);
+    imageRefs.current.forEach((img, index) => {
+      img.style.setProperty(
+        '--width',
+        `${index === 0 ? firstImagePercent : secondImagePercent}%`
+      );
+    });
+
+    if (Math.round(xPercent) === Math.round(currentXPercent)) {
+      cancelAnimationFrame(requestAnimationFrameId);
       requestAnimationFrameId = null;
     } else {
-      window.requestAnimationFrame(animate);
+      requestAnimationFrame(animate);
     }
   };
 
   return (
-    <div
-      onMouseMove={(e) => {
-        manageMouseMove(e);
-      }}
-      className="double"
-    >
-      <a
-        href={projects[0].link || projects[0].github}
-        target="_blank"
-        rel="noopener noreferrer"
-        ref={firstImage}
-        className="imageContainer"
-      >
-        <div className="stretchyWrapper">
-          <img src={projects[0].image} alt={projects[0].title} />
-        </div>
-        <div className="p-4">
-          <h3 className="text-xs md:text-4xl font-normal">
-            {projects[0].title}
-          </h3>
-          <p className="text-xs md:text-lg font-normal">
-            {projects[0].description}
-          </p>
-        </div>
-      </a>
-
-      <a
-        href={projects[1].link || projects[1].github}
-        target="_blank"
-        rel="noopener noreferrer"
-        ref={secondImage}
-        className="imageContainer"
-      >
-        <div className="stretchyWrapper">
-          <img src={projects[1].image} alt={projects[1].title} />
-        </div>
-        <div className="p-4">
-          <h3 className="text-xs md:text-4xl font-normal">
-            {projects[1].title}
-          </h3>
-          <p className="text-xs md:text-lg font-normal">
-            {projects[1].description}
-          </p>
-        </div>
-      </a>
+    <div onMouseMove={manageMouseMove} className="double">
+      {projects.map((project, index) => (
+        <a
+          key={index}
+          href={project.link || project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          ref={(el) => (imageRefs.current[index] = el)}
+          className="imageContainer"
+          style={{ width: 'var(--width, 50%)' }}
+        >
+          <div className="stretchyWrapper">
+            <img src={project.image} alt={project.title} />
+          </div>
+          <div className="p-4">
+            <h3 className="text-xs md:text-xl font-normal">{project.title}</h3>
+            <p className="text-xs md:text-base font-light">
+              {project.description}
+            </p>
+          </div>
+        </a>
+      ))}
     </div>
   );
 }

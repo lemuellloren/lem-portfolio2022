@@ -49,7 +49,7 @@ export const Experience = () => {
             onMouseEnter={() => handleImageInteraction(experience, 1)}
             onMouseMove={() => handleImageInteraction(experience, 1)}
             onMouseLeave={() => handleImageInteraction(experience, 0)}
-            className="w-full py-10 cursor-pointer text-center  text-white  border-b border-dark dark:border-white last:border-none"
+            className="w-full py-14 cursor-pointer text-center  text-white  border-b border-dark dark:border-white last:border-none"
           >
             <a
               href={experience.link}
@@ -61,7 +61,7 @@ export const Experience = () => {
                 <h2 className="text-xs md:text-4xl font-normal">
                   {experience.company}
                 </h2>
-                <span className="text-xs md:text-lg font-normal">
+                <span className="text-xs md:text-lg font-light">
                   {experience.position}
                 </span>
               </div>

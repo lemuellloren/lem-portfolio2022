@@ -112,7 +112,7 @@ export const projects = {
 };
 
 export const experience = {
-  title: 'My Experience',
+  title: 'My Digital Escapades',
   desc: '',
   experiences: [
     {
