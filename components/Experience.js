@@ -35,13 +35,13 @@ export const Experience = () => {
   };
   return (
     <section>
-      <h2 className="text-center text-2xl md:text-8xl	font-normal py-8 lowercase">
+      <h2 className="mb-40 lowercase text-2xl md:text-9xl	font-normal text-right">
         {experience.title}
       </h2>
       <div
         ref={containerRef}
         onMouseMove={handleMove}
-        className="relative max-w-4xl mx-auto w-full py-8"
+        className="relative w-full py-8"
       >
         {experience.experiences.map((experience) => (
           <div
@@ -55,19 +55,17 @@ export const Experience = () => {
               href={experience.link}
               target="_blank"
               rel="noreferrer"
-              className="flex justify-between items-end"
+              className="flex justify-between"
             >
-              <div className="flex items-end gap-4">
-                <h2 className="text-xs md:text-4xl font-normal">
+              <div className="text-left">
+                <h2 className="text-xs md:text-7xl font-normal">
                   {experience.company}
                 </h2>
                 <span className="text-xs md:text-lg font-light">
                   {experience.position}
                 </span>
               </div>
-              <span className="text-xs md:text-lg font-normal">
-                {experience.year}
-              </span>
+              <span className="text-sm font-normal">{experience.year}</span>
             </a>
           </div>
         ))}

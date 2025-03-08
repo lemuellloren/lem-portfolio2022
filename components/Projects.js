@@ -6,7 +6,11 @@ import ScrollVelocity from './animated/ScrollVelocity';
 export const Projects = () => {
   return (
     <section>
-      <ScrollVelocity texts={projects.scrollVelocityTexts} velocity={100} />
+      <ScrollVelocity
+        texts={projects.scrollVelocityTexts}
+        velocity={100}
+        className="lowercase text-2xl md:text-9xl font-normal p-2"
+      />
       <div>
         <Double projects={[projects.projects[0], projects.projects[1]]} />
         <Double

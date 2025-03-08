@@ -16,26 +16,44 @@ export const hero = {
   position: ['Software Engineer', 'Web Enthusiast', 'Hobbyist Designer'],
   cv: 'https://drive.google.com/file/d/1uDCdezem-VuYak4ZZVCr_DSQ2NDvV6c2/view?usp=sharing',
   description: `
-    Based in Davao City, Im a self-taught developer driven to
+    Im a self-taught developer driven to
     create functional and aesthetically pleasing designs through
     continuous learning and a passion for tackling new challenges. 
   `
 };
 
 export const about = {
-  title: 'about me',
-  descriptions: [
-    'Combining my expertise in software development and UI/UX design,',
-    'I create intuitive and visually compelling user experiences, fueled by',
-    'a passion for the intersection of creativity and technology,',
-    'and a dedication to user-centric design.'
+  title: 'About',
+  description:
+    'Combining my expertise in software development and UI/UX design, I create intuitive and visually compelling user experiences, fueled by a passion for the intersection of creativity and technology, and a dedication to user-centric design.',
+  technologies: [
+    {
+      header: 'Web/Software Applications',
+      description:
+        'Crafting dynamic and performant web applications using React.js and Next.js, with Node.js for back-end development. I specialize in building user-friendly interfaces and seamless experiences for modern web platforms.'
+    },
+    {
+      header: 'E-Commerce Solutions',
+      description:
+        'Creating custom Shopify themes and apps to elevate your online store. I specialize in developing engaging shopping experiences and building custom Shopify applications to meet specific business requirements.'
+    },
+    {
+      header: 'Website Development',
+      description:
+        'Creating responsive and intuitive websites using WordPress (with expertise in Divi and Elementor) and Webflow. I also build and manage WordPress Multisites, ensuring your website aligns perfectly with your brand.'
+    },
+    {
+      header: 'UI/UX & Animation Development',
+      description:
+        'Bringing interfaces to life with advanced animations using Framer Motion and GSAP within React. I also design intuitive and engaging user interfaces and experiences using Figma, seamlessly translating my designs into functional web applications.'
+    }
   ]
 };
 
 export const projects = {
   title: 'My Projects',
   desc: '',
-  scrollVelocityTexts: ['selected projects ✨', 'digital creations 🏆'],
+  scrollVelocityTexts: ['selected projects', 'digital creations'],
   projects: [
     {
       title: 'CarePulse Patient Management System',
@@ -112,7 +130,7 @@ export const projects = {
 };
 
 export const experience = {
-  title: 'My Digital Escapades',
+  title: 'The Journey',
   desc: '',
   experiences: [
     {
