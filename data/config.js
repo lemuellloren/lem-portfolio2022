@@ -185,7 +185,9 @@ export const stack = {
 };
 
 export const contact = {
-  title: 'Contact',
+  title: 'Contact me',
+  titleVelocity: ['contact me', 'let’s talk'],
+  description: 'Curious? Start the conversation.',
   email: 'lemuelpaconlloren@gmail.com',
   github: 'lemuellloren',
   dribbble: 'Lemuel',
