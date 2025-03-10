@@ -13,7 +13,7 @@ export const Contact = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-24">
           <div>
-            <p className="mb-16 text-2xl md:text-7xl font-normal">
+            <p className="mb-16 text-2xl md:text-7xl font-normal border-b border-dark dark:border-white py-14">
               {contact.description}
             </p>
             <a

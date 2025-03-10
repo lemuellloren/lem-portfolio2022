@@ -16,7 +16,7 @@ export default function Index() {
         <title>{meta.title}</title>
       </Head>
 
-      <div className="p-6 lg:p-20 m-auto w-full">
+      <div className="p-6 md:p-8 m-auto w-full">
         <Navigation />
         <Hero />
         <div className="p-0 space-y-10">
