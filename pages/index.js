@@ -18,8 +18,8 @@ export default function Index() {
 
       <div className="p-6 md:p-8 m-auto w-full">
         <Navigation />
-        <Hero />
         <div className="p-0 space-y-10">
+          <Hero />
           <About />
           <Projects />
           <Experience />

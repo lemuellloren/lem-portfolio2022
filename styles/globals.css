@@ -364,6 +364,7 @@ ul {
 .double {
   display: flex;
   margin-top: 10vh;
+  margin-bottom: 30vh;
   height: 45vw;
 }
 .double .imageContainer:nth-of-type(1) {

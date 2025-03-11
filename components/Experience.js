@@ -34,8 +34,8 @@ export const Experience = () => {
     setImg({ src: item.logo, alt: item.company, opacity });
   };
   return (
-    <section>
-      <h2 className="mb-40 lowercase text-2xl md:text-9xl	font-normal text-right">
+    <section className="md:pt-52">
+      <h2 className="md:mb-40 lowercase text-2xl md:text-9xl	font-normal text-right">
         {experience.title}
       </h2>
       <div
@@ -65,7 +65,9 @@ export const Experience = () => {
                   {experience.position}
                 </span>
               </div>
-              <span className="text-sm font-normal">{experience.year}</span>
+              <span className="text-xs md:text-sm font-normal">
+                {experience.year}
+              </span>
             </a>
           </div>
         ))}
