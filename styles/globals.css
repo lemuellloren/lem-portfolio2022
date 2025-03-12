@@ -14,6 +14,8 @@ body {
   font-family: "DM Sans", sans-serif;
   @apply dark:bg-dark bg-white text-white  transition-colors duration-500;
   line-height: 1.8rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1,
