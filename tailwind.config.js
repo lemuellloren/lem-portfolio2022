@@ -4,7 +4,7 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Be Vietnam Pro', 'system-ui', 'sans']
+      sans: ['DM Sans', 'sans-serif']
     },
     extend: {
       colors: {

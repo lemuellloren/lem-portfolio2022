@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
 @tailwind base;
@@ -11,10 +11,8 @@ body {
   margin: 0;
   min-height: 100vh;
   width: 100%;
-  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
-  @apply dark:bg-dark bg-white text-lightText  transition-colors duration-500;
+  font-family: "DM Sans", sans-serif;
+  @apply dark:bg-dark bg-white text-white  transition-colors duration-500;
   line-height: 1.8rem;
 }
 
@@ -23,8 +21,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  @apply dark:text-white text-black font-bold  transition-colors duration-500;
+h6,
+p,
+span {
+  @apply dark:text-white text-black font-bold transition-colors duration-500;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h3 {
   @apply text-base;
 }
 a {
-  @apply text-lightText transition-colors duration-500;
+  @apply text-white transition-colors duration-500;
 }
 
 * {
@@ -331,3 +331,56 @@ ul {
   white-space: nowrap;
   border: 0;
 }
+
+/* Scroll Velocity */
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  /* font-size: 2.25rem; */
+  /* font-weight: bold; */
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.scroller span {
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+/* Scale Image Gallery  */
+.double {
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 30vh;
+  height: 45vw;
+}
+.double .imageContainer:nth-of-type(1) {
+  width: 66.66%;
+}
+.double .imageContainer:nth-of-type(2) {
+  width: 33.33%;
+}
+.double .imageContainer .stretchyWrapper img {
+  object-fit: cover;
+}
+.double:nth-child(even) .imageContainer:nth-of-type(1) {
+  width: 33.33%;
+}
+.double:nth-child(even) .imageContainer:nth-of-type(2) {
+  width: 66.66%;
+}
+
+

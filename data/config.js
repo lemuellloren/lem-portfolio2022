@@ -11,75 +11,119 @@ export const meta = {
 
 export const hero = {
   title: 'Lemuel Lloren',
+  profile: '/static/profile.png',
   isActive: false,
   position: ['Software Engineer', 'Web Enthusiast', 'Hobbyist Designer'],
   cv: 'https://drive.google.com/file/d/1uDCdezem-VuYak4ZZVCr_DSQ2NDvV6c2/view?usp=sharing',
-  desc: `My interests are in frontend engineering, and I love to create beautiful and performant products with delightful user experiences. 
+  description: `
+    Im a self-taught developer driven to
+    create functional and aesthetically pleasing designs through
+    continuous learning and a passion for tackling new challenges. 
   `
+};
+
+export const about = {
+  title: 'About',
+  description:
+    'I build intuitive, visually engaging experiences with front-end development and UI/UX design, turning concepts into seamless, interactive websites.',
+
+  technologies: [
+    {
+      header: 'Web and Software Development',
+      description:
+        'Building fast, dynamic web apps with React, Next.js, and Node.js, ensuring seamless and engaging user experiences.'
+    },
+    {
+      header: 'E-Commerce Solutions',
+      description:
+        'Enhancing Shopify stores with custom themes and apps, optimizing user engagement and business growth.'
+    },
+    {
+      header: 'Website Development',
+      description:
+        'Creating responsive, brand-aligned websites with WordPress (Divi, Elementor) and Webflow, including multisite management.'
+    },
+    {
+      header: 'UI/UX and Animations',
+      description:
+        'I design in Figma, develop websites, and enhance them with React Framer Motion & GSAP animations.'
+    }
+  ]
 };
 
 export const projects = {
   title: 'My Projects',
   desc: '',
+  scrollVelocityTexts: ['selected projects •', 'digital creations •'],
   projects: [
     {
       title: 'CarePulse Patient Management System',
+      image: '/static/covers/healthcare.png',
       description: 'Next.js, Appwrite, Twilio, TypeScript, TailwindCSS',
       link: '',
       github:
         'https://github.com/lemuellloren/healthcare-patient-management-system'
     },
     {
-      title: 'Owner Dashboard Renewal and Relisting',
-      description: 'PostgreSQL, Node.js, Express, React, TypeScript',
-      link: 'https://www.poplarhomes.com/login',
-      github: ''
-    },
-    {
       title: 'Homyz',
+      image: '/static/covers/real-estate.png',
       description: 'React, Next.js, Chakra UI, RapidAPI',
       link: 'https://homyz-app.vercel.app/',
       github: 'lemuellloren/modern-real-estate-app'
     },
     {
+      title: 'Owner Dashboard Renewal and Relisting',
+      image: '/static/covers/rent.png',
+      description: 'PostgreSQL, Node.js, Express, React, TypeScript',
+      link: 'https://www.poplarhomes.com/login',
+      github: ''
+    },
+    {
       title: 'ViewQwest',
+      image: '/static/covers/internet.png',
       description: 'WordPress, Elementor, Vue, TS, Laravel',
       link: 'https://viewqwest.com/',
       github: ''
     },
     {
       title: 'Development Entrepreneurship',
-      description: 'Website: WordPress and Divi',
+      image: '/static/covers/help.png',
+      description: 'WordPress and Divi',
       link: 'https://developmententrepreneurship.org/',
       github: ''
     },
     {
       title: 'Javier Project Managers',
-      description: 'Website: WordPress and Elementor',
+      image: '/static/covers/interior.png',
+      description: 'WordPress and Elementor',
       link: 'https://jpm.com.ph/',
       github: ''
     },
     {
       title: 'SLA-PH',
-      description: 'Website: WordPress and Divi',
+      image: '/static/covers/help2.png',
+      description: 'WordPress and Divi',
       link: 'https://stemleadershipalliance.ph/',
       github: ''
     },
     {
       title: 'Consuelo ',
-      description: 'Website: WordPress and Divi',
+      image: '/static/covers/educ.png',
+      description: 'WordPress and Divi',
       link: 'https://consuelo.org/',
       github: ''
     },
     {
       title: 'Atout ',
-      description: 'Website: WordPress and Elementor',
+      image: '/static/covers/resto.png',
+      description: 'WordPress and Elementor',
       link: 'https://atout.sg/',
       github: ''
     },
     {
       title: 'BearGrip ',
-      description: 'Website: Shopify',
+      image: '/static/covers/gym.png',
+      description: 'Shopify',
       link: 'https://beargrip.co.uk/',
       github: ''
     }
@@ -87,7 +131,7 @@ export const projects = {
 };
 
 export const experience = {
-  title: 'My Experience',
+  title: 'Journey',
   desc: '',
   experiences: [
     {
@@ -142,7 +186,9 @@ export const stack = {
 };
 
 export const contact = {
-  title: 'Contact',
+  title: 'Contact me',
+  titleVelocity: ['contact me •', "let's talk •"],
+  description: 'Curious? Start the conversation.',
   email: 'lemuelpaconlloren@gmail.com',
   github: 'lemuellloren',
   dribbble: 'Lemuel',

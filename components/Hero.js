@@ -1,134 +1,76 @@
-import { useEffect, useRef, useState } from 'react';
-import { defaultAnimationConfig, hero } from '@/data/config';
-import { useTheme } from 'next-themes';
-import Image from 'next/image';
-import AnimatedContent from './AnimatedContent';
-import RotatingText from './RotatingText';
-import Waves from './Waves';
-import Iridescence from './Iridescence';
-import VariableProximity from './VariableProximity';
+'use client';
+
+import { useRef, useState } from 'react';
+import { contact, hero } from '@/data/config';
+import { motion, useSpring } from 'framer-motion';
+import HoverTextButton from './animated/HoverTextButton';
+import { About } from './About';
 
 export default function Hero() {
-  const { theme, setTheme, systemTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-    if (!localStorage.getItem('theme')) {
-      setTheme('dark');
-    }
-  }, [setTheme]);
+  const [hovered, setHovered] = useState(false);
+  const h1Ref = useRef(null);
+  const imageRef = useRef(null);
 
-  const containerRef = useRef(null);
-  const currentTheme = mounted
-    ? theme === 'system'
-      ? systemTheme
-      : theme
-    : null;
-  const isThemeIcon = currentTheme === 'light' ? 'moon.svg' : 'sun.svg';
+  const springConfig = { stiffness: 150, damping: 15, mass: 0.1 };
+  const x = useSpring(0, springConfig);
+  const y = useSpring(0, springConfig);
+
+  const handleMouseMove = (e) => {
+    if (!h1Ref.current || !imageRef.current) return;
+
+    const rect = h1Ref.current.getBoundingClientRect();
+    const { clientX, clientY } = e;
+    const relativeX = clientX - rect.left;
+    const relativeY = clientY - rect.top;
+
+    x.set(relativeX - imageRef.current.offsetWidth / 2);
+    y.set(relativeY - imageRef.current.offsetHeight / 2);
+  };
 
   return (
-    <AnimatedContent {...defaultAnimationConfig}>
-      <header className="mb-20">
-        <div className="flex flex-row items-center justify-between w-full">
-          <div className="w-20 h-20 rounded-full relative overflow-hidden">
-            <Image
-              className="rounded-full"
-              src="/static/profile.png"
-              layout="fill"
-              objectFit="contain"
-              alt="Lemuel Lloren"
-            />
-          </div>
-          {mounted && currentTheme && (
-            <button
-              className="cursor-pointer toggleTheme w-9 h-9 bg-gray-200 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
-              onClick={() =>
-                setTheme(currentTheme === 'light' ? 'dark' : 'light')
-              }
-            >
-              <Image
-                src={`/static/icons/${isThemeIcon}`}
-                width={20}
-                height={20}
-                alt="Toggle theme"
+    <section className="flex relative mt-24 md:mt-0">
+      <div className="w-full">
+        <div className="profile-title border-b border-dark dark:border-white w-full">
+          <h1
+            ref={h1Ref}
+            className="pb-4 md:flex gap-4 mt-16 text-5xl md:text-[12rem] font-normal text-black dark:text-white text-left cursor-pointer group relative overflow-hidden"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            onMouseMove={handleMouseMove}
+          >
+            {hero.title}
+
+            {hovered && (
+              <motion.img
+                ref={imageRef}
+                src={hero.profile}
+                alt="Hover Effect"
+                className="hidden md:block absolute md:w-32 md:h-32 object-cover pointer-events-none transition-opacity duration-300 ease-in-out"
+                style={{
+                  x,
+                  y,
+                  opacity: hovered ? 1 : 0
+                }}
               />
-            </button>
-          )}
-        </div>
-        <div
-          className="mt-8"
-          ref={containerRef}
-          style={{ position: 'relative' }}
-        >
-          <VariableProximity
-            label={'Lemuel Lloren'}
-            className={
-              'font-bold text-3xl md:text-8xl tracking-tight cursor-pointer'
-            }
-            fromFontVariationSettings="'wght' 400, 'opsz' 9"
-            toFontVariationSettings="'wght' 1000, 'opsz' 40"
-            containerRef={containerRef}
-            radius={100}
-            falloff="linear"
-          />
+            )}
+          </h1>
         </div>
 
-        {mounted &&
-          currentTheme &&
-          (currentTheme === 'dark' ? (
-            <div className="relative my-5 h-60 w-full">
-              <Waves
-                lineColor="#fff"
-                backgroundColor="#000"
-                waveSpeedX={0.02}
-                waveSpeedY={0.01}
-                waveAmpX={40}
-                waveAmpY={20}
-                friction={0.9}
-                tension={0.01}
-                maxCursorMove={120}
-                xGap={12}
-                yGap={36}
-              />
-            </div>
-          ) : (
-            <div className="relative my-5 h-60 w-full">
-              <Iridescence
-                color={[1, 1, 1]}
-                mouseReact={true}
-                amplitude={0.1}
-                speed={1.0}
-              />
-            </div>
-          ))}
-
-        <div>
-          <RotatingText
-            positions={hero.position}
-            interval={3000}
-            spanClassName="block text-gray-700 dark:text-gray-200 mb-4 text-3xl font-bold"
-          />
-          <div className="text-xl">{hero.desc}</div>
+        <div className="mt-8 hidden md:flex justify-between">
+          <p className="text-xs md:text-xl font-normal">Front-end Developer</p>
+          <p className="text-xs md:text-xl font-normal">UI/UX Designer</p>
+          <HoverTextButton
+            as="a"
+            href={`mailto:${contact.email}`}
+            className="text-xs md:text-xl font-normal"
+          >
+            Contact me
+          </HoverTextButton>
         </div>
-
-        {hero.cv && hero.isActive && (
-          <div className="mt-8 rounded-xl py-2 px-4 inline-flex items-center bg-gray-200 dark:bg-zinc-900">
-            <a
-              href={hero.cv}
-              className="flex items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image
-                src="/static/icons/download.svg"
-                width={18}
-                height={18}
-                alt="Download CV"
-              />
-            </a>
-          </div>
-        )}
-      </header>
-    </AnimatedContent>
+        <div className="mt-8 md:mt-0">
+          <About />
+        </div>
+      </div>
+    </section>
   );
 }
