@@ -25,27 +25,28 @@ export const hero = {
 export const about = {
   title: 'About',
   description:
-    'With expertise in software development and UI/UX design, I create intuitive and visually compelling experiences by combining creativity, technology, and user-centric design.',
+    'I build intuitive, visually engaging experiences with front-end development and UI/UX design, turning concepts into seamless, interactive websites.',
+
   technologies: [
     {
-      header: 'Web/Software Applications',
+      header: 'Web and Software Development',
       description:
-        'Crafting dynamic and performant web applications using React.js and Next.js, with Node.js for back-end development. I specialize in building user-friendly interfaces and seamless experiences for modern web platforms.'
+        'Building fast, dynamic web apps with React, Next.js, and Node.js, ensuring seamless and engaging user experiences.'
     },
     {
       header: 'E-Commerce Solutions',
       description:
-        'Creating custom Shopify themes and apps to elevate your online store. I specialize in developing engaging shopping experiences and building custom Shopify applications to meet specific business requirements.'
+        'Enhancing Shopify stores with custom themes and apps, optimizing user engagement and business growth.'
     },
     {
       header: 'Website Development',
       description:
-        'Creating responsive and intuitive websites using WordPress (with expertise in Divi and Elementor) and Webflow. I also build and manage WordPress Multisites, ensuring your website aligns perfectly with your brand.'
+        'Creating responsive, brand-aligned websites with WordPress (Divi, Elementor) and Webflow, including multisite management.'
     },
     {
-      header: 'UI/UX & Animation Development',
+      header: 'UI/UX and Animations',
       description:
-        'Bringing interfaces to life with advanced animations using Framer Motion and GSAP within React. I also design intuitive and engaging user interfaces and experiences using Figma, seamlessly translating my designs into functional web applications.'
+        'I design in Figma, develop websites, and enhance them with React Framer Motion & GSAP animations.'
     }
   ]
 };
@@ -130,7 +131,7 @@ export const projects = {
 };
 
 export const experience = {
-  title: 'The Journey',
+  title: 'Journey',
   desc: '',
   experiences: [
     {
