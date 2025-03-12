@@ -54,7 +54,7 @@ export const about = {
 export const projects = {
   title: 'My Projects',
   desc: '',
-  scrollVelocityTexts: ['selected projects', 'digital creations'],
+  scrollVelocityTexts: ['selected projects •', 'digital creations •'],
   projects: [
     {
       title: 'CarePulse Patient Management System',
@@ -65,18 +65,18 @@ export const projects = {
         'https://github.com/lemuellloren/healthcare-patient-management-system'
     },
     {
-      title: 'Owner Dashboard Renewal and Relisting',
-      image: '/static/covers/rent.png',
-      description: 'PostgreSQL, Node.js, Express, React, TypeScript',
-      link: 'https://www.poplarhomes.com/login',
-      github: ''
-    },
-    {
       title: 'Homyz',
       image: '/static/covers/real-estate.png',
       description: 'React, Next.js, Chakra UI, RapidAPI',
       link: 'https://homyz-app.vercel.app/',
       github: 'lemuellloren/modern-real-estate-app'
+    },
+    {
+      title: 'Owner Dashboard Renewal and Relisting',
+      image: '/static/covers/rent.png',
+      description: 'PostgreSQL, Node.js, Express, React, TypeScript',
+      link: 'https://www.poplarhomes.com/login',
+      github: ''
     },
     {
       title: 'ViewQwest',
@@ -187,7 +187,7 @@ export const stack = {
 
 export const contact = {
   title: 'Contact me',
-  titleVelocity: ['contact me', 'let’s talk'],
+  titleVelocity: ['contact me •', "let's talk •"],
   description: 'Curious? Start the conversation.',
   email: 'lemuelpaconlloren@gmail.com',
   github: 'lemuellloren',

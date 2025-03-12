@@ -34,7 +34,7 @@ export const Experience = () => {
     setImg({ src: item.logo, alt: item.company, opacity });
   };
   return (
-    <section className="md:pt-52">
+    <section>
       <h2 className="md:mb-40 lowercase text-2xl md:text-9xl	font-normal text-right">
         {experience.title}
       </h2>

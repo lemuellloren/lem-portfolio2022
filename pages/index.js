@@ -20,7 +20,6 @@ export default function Index() {
         <Navigation />
         <div className="p-0 space-y-10">
           <Hero />
-          <About />
           <Projects />
           <Experience />
           <Contact />

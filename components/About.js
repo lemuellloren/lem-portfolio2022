@@ -3,9 +3,6 @@ import { about } from '@/data/config';
 export const About = () => {
   return (
     <section id="about-section" className="t-8 md:py-48">
-      <h2 className="mb-8 md:mb-40 lowercase text-2xl md:text-9xl	font-normal">
-        {about.title}
-      </h2>
       <div className="flex items-center">
         <div className="flex flex-col md:flex-row w-full">
           <div className="md:w-1/4"></div>
