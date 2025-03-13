@@ -87,7 +87,6 @@ export const Experience = () => {
             </div>
           ))}
 
-          {/* Hovered Content (Replaces Image) */}
           <motion.div
             ref={contentRef}
             className="w-1/4 hidden md:block absolute top-0 left-0 bg-black dark:bg-white p-4 md:p-6 pointer-events-none transition-opacity duration-200 ease-in-out"
