@@ -58,7 +58,7 @@ export const projects = {
   projects: [
     {
       title: 'CarePulse Patient Management System',
-      image: '/static/covers/healthcare.png',
+      image: '/static/covers/cover-healthcare.png',
       description: 'Next.js, Appwrite, Twilio, TypeScript, TailwindCSS',
       link: '',
       github:
@@ -66,65 +66,107 @@ export const projects = {
     },
     {
       title: 'Homyz',
-      image: '/static/covers/real-estate.png',
+      image: '/static/covers/cover-real-estate.png',
       description: 'React, Next.js, Chakra UI, RapidAPI',
       link: 'https://homyz-app.vercel.app/',
       github: 'lemuellloren/modern-real-estate-app'
     },
     {
       title: 'Owner Dashboard Renewal and Relisting',
-      image: '/static/covers/rent.png',
+      image: '/static/covers/cover-rent.png',
       description: 'PostgreSQL, Node.js, Express, React, TypeScript',
       link: 'https://www.poplarhomes.com/login',
       github: ''
     },
     {
       title: 'ViewQwest',
-      image: '/static/covers/internet.png',
+      image: '/static/covers/cover-internet.png',
       description: 'WordPress, Elementor, Vue, TS, Laravel',
       link: 'https://viewqwest.com/',
       github: ''
     },
     {
       title: 'Development Entrepreneurship',
-      image: '/static/covers/help.png',
+      image: '/static/covers/cover-help.png',
       description: 'WordPress and Divi',
       link: 'https://developmententrepreneurship.org/',
       github: ''
     },
     {
       title: 'Javier Project Managers',
-      image: '/static/covers/interior.png',
+      image: '/static/covers/cover-interior.png',
       description: 'WordPress and Elementor',
       link: 'https://jpm.com.ph/',
       github: ''
     },
     {
-      title: 'SLA-PH',
-      image: '/static/covers/help2.png',
-      description: 'WordPress and Divi',
-      link: 'https://stemleadershipalliance.ph/',
-      github: ''
-    },
-    {
-      title: 'Consuelo ',
-      image: '/static/covers/educ.png',
-      description: 'WordPress and Divi',
-      link: 'https://consuelo.org/',
+      title: 'Evergreen Interiors',
+      image: '/static/covers/cover-plants.png',
+      description: 'Figma, WordPress, and WPBakery',
+      link: 'https://evergreeninteriors.com.au/',
       github: ''
     },
     {
       title: 'Atout ',
-      image: '/static/covers/resto.png',
+      image: '/static/covers/cover-resto.png',
       description: 'WordPress and Elementor',
       link: 'https://atout.sg/',
       github: ''
     },
     {
       title: 'BearGrip ',
-      image: '/static/covers/gym.png',
+      image: '/static/covers/cover-gym.png',
       description: 'Shopify',
       link: 'https://beargrip.co.uk/',
+      github: ''
+    },
+    {
+      title: 'SLA-PH',
+      image: '/static/covers/cover-help2.png',
+      description: 'WordPress and Divi',
+      link: 'https://stemleadershipalliance.ph/',
+      github: ''
+    },
+    {
+      title: 'TechRemote',
+      image: '/static/covers/cover-remote.png',
+      description: 'WordPress and Divi',
+      link: 'https://www.linkedin.com/company/techremoteco/about/',
+      github: ''
+    },
+    {
+      title: 'Consuelo ',
+      image: '/static/covers/cover-educ.png',
+      description: 'WordPress and Divi',
+      link: 'https://consuelo.org/',
+      github: ''
+    },
+    {
+      title: 'ChildFund Philippines',
+      image: '/static/covers/cover-child.png',
+      description: 'WordPress and Divi',
+      link: 'https://childfund.org.ph/',
+      github: ''
+    },
+    {
+      title: 'CODE-NGO',
+      image: '/static/covers/cover-ngo.png',
+      description: 'WordPress and Divi',
+      link: 'https://code-ngo.org/',
+      github: ''
+    },
+    {
+      title: 'Van Damme Plant Hire ',
+      image: '/static/covers/cover-hire.png',
+      description: 'Figma, WordPress, and WPBakery',
+      link: 'https://vandammeph.com.au/',
+      github: ''
+    },
+    {
+      title: 'Spannerman Autocare',
+      image: '/static/covers/cover-autocare.png',
+      description: 'Figma, WordPress, and WPBakery',
+      link: 'https://spannermanautocare.com.au/',
       github: ''
     }
   ]

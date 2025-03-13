@@ -364,9 +364,8 @@ ul {
 
 /* Scale Image Gallery  */
 .double {
-  display: flex;
-  margin-top: 10vh;
-  margin-bottom: 30vh;
+  /* margin-top: 10vh;
+  margin-bottom: 10vh; */
   height: 45vw;
 }
 .double .imageContainer:nth-of-type(1) {

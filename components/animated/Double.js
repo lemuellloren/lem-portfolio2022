@@ -1,43 +1,61 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useEffect } from 'react';
 
 export default function Double({ projects, reversed }) {
   const imageRefs = useRef([]);
-  let requestAnimationFrameId = null;
-  let xPercent = reversed ? 100 : 0;
-  let currentXPercent = reversed ? 100 : 0;
-  const speed = 0.15;
+  const requestAnimationFrameId = useRef(null);
+  const xPercent = useRef(reversed ? 100 : 0);
+  const currentXPercent = useRef(reversed ? 100 : 0);
+  const speed = 0.25; // Increased speed for a snappier response
 
   const manageMouseMove = (e) => {
-    xPercent = (e.clientX / window.innerWidth) * 100;
-    if (!requestAnimationFrameId)
-      requestAnimationFrameId = requestAnimationFrame(animate);
-  };
-
-  const animate = () => {
-    currentXPercent += (xPercent - currentXPercent) * speed;
-
-    const firstImagePercent = 66.66 - currentXPercent * 0.33;
-    const secondImagePercent = 33.33 + currentXPercent * 0.33;
-
-    imageRefs.current.forEach((img, index) => {
-      img.style.setProperty(
-        '--width',
-        `${index === 0 ? firstImagePercent : secondImagePercent}%`
-      );
-    });
-
-    if (Math.round(xPercent) === Math.round(currentXPercent)) {
-      cancelAnimationFrame(requestAnimationFrameId);
-      requestAnimationFrameId = null;
-    } else {
-      requestAnimationFrame(animate);
+    xPercent.current = (e.clientX / window.innerWidth) * 100;
+    if (!requestAnimationFrameId.current) {
+      requestAnimationFrameId.current = requestAnimationFrame(animate);
     }
   };
 
+  const animate = () => {
+    currentXPercent.current +=
+      (xPercent.current - currentXPercent.current) * speed;
+
+    let firstImagePercent = Math.max(
+      35,
+      Math.min(65, 66.66 - currentXPercent.current * 0.33)
+    );
+    let secondImagePercent = 100 - firstImagePercent; // Keep total width at 100%
+
+    imageRefs.current.forEach((img, index) => {
+      if (img) {
+        img.style.setProperty(
+          '--width',
+          `${index === 0 ? firstImagePercent : secondImagePercent}%`
+        );
+      }
+    });
+
+    if (Math.abs(xPercent.current - currentXPercent.current) < 0.5) {
+      cancelAnimationFrame(requestAnimationFrameId.current);
+      requestAnimationFrameId.current = null;
+    } else {
+      requestAnimationFrameId.current = requestAnimationFrame(animate);
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      if (requestAnimationFrameId.current) {
+        cancelAnimationFrame(requestAnimationFrameId.current);
+      }
+    };
+  }, []);
+
   return (
-    <div onMouseMove={manageMouseMove} className="double">
+    <div
+      onMouseMove={manageMouseMove}
+      className="mb-32 double flex w-full mt-[10vh] mb-[10vh] md:mb-[23vh]"
+    >
       {projects.map((project, index) => (
         <a
           key={index}
@@ -45,14 +63,18 @@ export default function Double({ projects, reversed }) {
           target="_blank"
           rel="noopener noreferrer"
           ref={(el) => (imageRefs.current[index] = el)}
-          className="imageContainer"
+          className="imageContainer transition-all duration-150 ease-out"
           style={{ width: 'var(--width, 50%)' }}
         >
           <div className="stretchyWrapper">
-            <img src={project.image} alt={project.title} />
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-auto"
+            />
           </div>
           <div className="p-4">
-            <h3 className="text-xs md:text-xl font-normal">{project.title}</h3>
+            <h3 className="md:text-4xl font-normal">{project.title}</h3>
             <p className="text-xs md:text-base font-light">
               {project.description}
             </p>

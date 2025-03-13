@@ -23,6 +23,15 @@ export const Projects = () => {
           reversed={true}
         />
         <Double projects={[projects.projects[8], projects.projects[9]]} />
+        <Double
+          projects={[projects.projects[10], projects.projects[11]]}
+          reversed={true}
+        />
+        <Double projects={[projects.projects[12], projects.projects[13]]} />
+        <Double
+          projects={[projects.projects[14], projects.projects[15]]}
+          reversed={true}
+        />
       </div>
     </section>
   );
