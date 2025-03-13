@@ -4,6 +4,8 @@ import { defaultAnimationConfig, experience } from '@/data/config';
 import { motion, useSpring } from 'framer-motion';
 import React, { useState, useRef } from 'react';
 import AnimatedContent from './animated/AnimatedContent';
+import FlipInXText from './animated/FlipInXText';
+import Image from 'next/image';
 
 export const Experience = () => {
   const [content, setContent] = useState({
@@ -49,41 +51,60 @@ export const Experience = () => {
   return (
     <section>
       <AnimatedContent {...defaultAnimationConfig}>
-        <h2 className="md:mb-40 lowercase text-2xl md:text-9xl font-normal text-right">
+        <FlipInXText
+          as="h2"
+          className="md:mb-40 lowercase text-2xl md:text-9xl font-normal text-right"
+        >
           {experience.title}
-        </h2>
+        </FlipInXText>
 
         <div
           ref={containerRef}
           onMouseMove={handleMove}
           className="relative w-full py-8"
         >
-          {experience.experiences.map((experience) => (
+          {experience.experiences.map((experience, index) => (
             <div
               key={experience.company}
               onMouseEnter={() => handleContentInteraction(experience, 1)}
               onMouseMove={() => handleContentInteraction(experience, 1)}
               onMouseLeave={() => handleContentInteraction(experience, 0)}
-              className="w-full py-14 cursor-pointer text-center text-white border-b border-dark dark:border-white last:border-none"
+              className="w-full  cursor-pointer text-center text-white last:border-none"
             >
               <a
                 href={experience.link}
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-between"
+                className="flex justify-between py-14"
               >
                 <div className="text-left">
-                  <h2 className="text-xs md:text-7xl font-normal">
+                  <FlipInXText
+                    as="h2"
+                    className="text-xs md:text-7xl font-normal"
+                  >
                     {experience.company}
-                  </h2>
-                  <span className="text-xs md:text-lg font-light">
+                  </FlipInXText>
+
+                  <FlipInXText as="p" className="text-xs md:text-lg font-light">
                     {experience.position}
-                  </span>
+                  </FlipInXText>
                 </div>
-                <span className="text-xs md:text-sm font-normal">
+                <FlipInXText as="p" className="text-xs md:text-lg font-light">
                   {experience.year}
-                </span>
+                </FlipInXText>
               </a>
+
+              <motion.div
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 1.2,
+                  ease: 'easeInOut',
+                  delay: index * 0.2
+                }}
+                className="border-b border-dark dark:border-white origin-left"
+              />
             </div>
           ))}
 
@@ -97,12 +118,14 @@ export const Experience = () => {
             }}
           >
             <div className="flex flex-row items-center gap-4">
-              <img
-                src={content.logo}
-                alt={content.title}
-                width={30}
-                height={30}
-              />
+              {content.logo && (
+                <Image
+                  src={content.logo}
+                  alt="Company Logo"
+                  width={40}
+                  height={40}
+                />
+              )}
               <h2 className="md:text-4xl font-normal text-white dark:text-black">
                 {content.title}
               </h2>

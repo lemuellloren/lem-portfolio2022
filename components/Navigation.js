@@ -3,6 +3,9 @@ import { Moon, Sun } from 'lucide-react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
+import AnimatedContent from './animated/AnimatedContent';
+import { defaultAnimationConfig } from '@/data/config';
+import FlipInXText from './animated/FlipInXText';
 
 export default function Navigation() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -48,12 +51,18 @@ export default function Navigation() {
         </Link>
 
         <div className="flex flex-wrap items-center space-x-6">
-          <span className="text-xs font-light dark:text-white text-black">
+          <FlipInXText
+            as="p"
+            className="text-xs font-light dark:text-white text-black"
+          >
             Based in <br /> Davao City
-          </span>
-          <span className="text-xs font-light dark:text-white text-black">
+          </FlipInXText>
+          <FlipInXText
+            as="p"
+            className="text-xs font-light dark:text-white text-black"
+          >
             {month} {year} <br /> {time}
-          </span>
+          </FlipInXText>
 
           {mounted && (
             <button

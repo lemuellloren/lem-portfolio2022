@@ -3,6 +3,7 @@ import React from 'react';
 import ScrollVelocity from './animated/ScrollVelocity';
 import HoverTextButton from './animated/HoverTextButton';
 import AnimatedContent from './animated/AnimatedContent';
+import FlipInXText from './animated/FlipInXText';
 
 export const Contact = () => {
   return (
@@ -20,15 +21,18 @@ export const Contact = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-24"
         >
           <div>
-            <p className="mb-8 md:mb-16 text-2xl md:text-7xl font-normal  py-14">
+            <FlipInXText
+              as="p"
+              className="mb-8 md:mb-16 text-2xl md:text-7xl font-normal  py-14"
+            >
               {contact.description}
-            </p>
+            </FlipInXText>
             <HoverTextButton
               as="a"
               href={`mailto:${contact.email}`}
               className="text-black dark:text-white text-xl md:text-7xl font-normal"
             >
-              {contact.email}
+              <FlipInXText as="span">{contact.email}</FlipInXText>
             </HoverTextButton>
           </div>
         </div>

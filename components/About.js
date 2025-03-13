@@ -1,4 +1,5 @@
 import { about } from '@/data/config';
+import FlipInXText from './animated/FlipInXText';
 
 export const About = () => {
   return (
@@ -7,15 +8,21 @@ export const About = () => {
         <div className="flex flex-col md:flex-row w-full">
           <div className="md:w-1/4"></div>
           <div className="md:w-3/4">
-            <p className="text-2xl md:text-7xl font-normal leading-[1.2] w-full max-w-[ch-unit]">
+            <FlipInXText
+              as="p"
+              className="text-2xl md:text-7xl font-normal leading-[1.2] w-full max-w-[ch-unit]"
+            >
               {about.description}
-            </p>
-
+            </FlipInXText>
             <div className="mt-8 md:mt-52 grid grid-cols-1 md:grid-cols-4 gap-4 row-span-1">
               {about.technologies.map((tech, index) => (
                 <div key={index}>
-                  <h2 className="md:text-4xl font-normal">{tech.header}</h2>
-                  <p className="mt-8 font-sm font-light">{tech.description}</p>
+                  <FlipInXText as="h2" className="md:text-4xl font-normal">
+                    {tech.header}
+                  </FlipInXText>
+                  <FlipInXText as="p" className="mt-8 font-sm font-light">
+                    {tech.description}
+                  </FlipInXText>
                 </div>
               ))}
             </div>

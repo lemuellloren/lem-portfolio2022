@@ -1,9 +1,11 @@
 'use client';
 
-import { contact, footer } from '@/data/config';
+import { contact, defaultAnimationConfig, footer } from '@/data/config';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import HoverTextButton from './animated/HoverTextButton';
+import AnimatedContent from './animated/AnimatedContent';
+import FlipInXText from './animated/FlipInXText';
 
 const Footer = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,20 +28,22 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {platform}
+                  <FlipInXText as="span">{platform}</FlipInXText>
                 </HoverTextButton>
               );
             })}
           </div>
         )}
 
-        <div className="relative flex flex-col items-center">
+        <div className="relative flex flex-col md:items-center">
           <p
             className="mt-8 md:mt-0 text-xs md:text-base font-light text-left md:text-right cursor-pointer"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            &copy; {new Date().getFullYear()} {footer.title}
+            <FlipInXText as="span">
+              &copy; {new Date().getFullYear()} {footer.title}
+            </FlipInXText>
           </p>
 
           {isHovered && (

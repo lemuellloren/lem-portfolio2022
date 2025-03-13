@@ -1,11 +1,12 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import { contact, defaultAnimationConfig, hero } from '@/data/config';
+import { defaultAnimationConfig, hero } from '@/data/config';
 import { motion, useSpring } from 'framer-motion';
 import HoverTextButton from './animated/HoverTextButton';
 import { About } from './About';
 import AnimatedContent from './animated/AnimatedContent';
+import FlipInXText from './animated/FlipInXText';
 
 export default function Hero() {
   const [hovered, setHovered] = useState(false);
@@ -32,15 +33,25 @@ export default function Hero() {
     <section className="flex relative mt-24 md:mt-0">
       <AnimatedContent {...defaultAnimationConfig}>
         <div className="w-full">
-          <div className="profile-title border-b border-dark dark:border-white w-full">
+          <div className="profile-title w-full relative overflow-hidden">
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{
+                duration: 1.2,
+                ease: 'easeInOut',
+                delay: 0.2
+              }}
+              className="border-b border-dark dark:border-white origin-left absolute left-0 bottom-0 w-full"
+            />
             <h1
               ref={h1Ref}
-              className="pb-4 md:flex gap-4 mt-16 text-5xl md:text-[12rem] font-normal text-black dark:text-white text-left cursor-pointer group relative overflow-hidden"
+              className="pb-4 md:flex gap-4 mt-16 text-5xl md:text-[12rem] font-normal text-black dark:text-white text-left cursor-pointer group relative"
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
               onMouseMove={handleMouseMove}
             >
-              {hero.title}
+              <FlipInXText as="span">{hero.title}</FlipInXText>
 
               {hovered && (
                 <motion.img
@@ -60,16 +71,20 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 hidden md:flex justify-between">
-            <p className="text-xs md:text-xl font-normal">
-              Front-end Developer
-            </p>
-            <p className="text-xs md:text-xl font-normal">UI/UX Designer</p>
+            <FlipInXText as="p" className="text-xs md:text-xl font-normal">
+              Front-End Developer
+            </FlipInXText>
+
+            <FlipInXText as="p" className="text-xs md:text-xl font-normal">
+              UI/UX Designer
+            </FlipInXText>
+
             <HoverTextButton
               as="a"
               href="#contactMe"
               className="text-xs md:text-xl font-normal"
             >
-              Contact me
+              <FlipInXText as="span">Contact me</FlipInXText>
             </HoverTextButton>
           </div>
           <div className="mt-8 md:mt-0">
