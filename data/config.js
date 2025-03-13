@@ -248,6 +248,12 @@ export const contact = {
   linkedin: 'lemuel-lloren'
 };
 
+export const footer = {
+  title: 'Design & Development by Lemuel Lloren',
+  builtWith: 'Built with Next.js, Tailwind CSS, and React Framer Motion.',
+  social: ['LinkedIn', 'Github', 'Dribbble']
+};
+
 export const defaultAnimationConfig = {
   distance: 50,
   direction: 'vertical',
