@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 export default function Navigation() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -32,14 +33,19 @@ export default function Navigation() {
   const isThemeLogo = theme === 'light' ? 'lem-dark-logo.svg' : 'lem-logo.svg';
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 dark:bg-black bg-white shadow-sm">
+    <nav
+      id="mainNav"
+      className="fixed top-0 left-0 w-full z-50 dark:bg-black bg-white shadow-sm"
+    >
       <div className="p-6 md:p-8 m-auto w-full flex flex-wrap justify-between items-center">
-        <Image
-          src={`/static/logos/${isThemeLogo}`}
-          alt="Lemuel"
-          width={30}
-          height={30}
-        />
+        <Link href="/." className="cursor-pointer" passHref>
+          <Image
+            src={`/static/logos/${isThemeLogo}`}
+            alt="Lemuel"
+            width={30}
+            height={30}
+          />
+        </Link>
 
         <div className="flex flex-wrap items-center space-x-6">
           <span className="text-xs font-light dark:text-white text-black">

@@ -51,7 +51,8 @@ export default function Hero() {
                   style={{
                     x,
                     y,
-                    opacity: hovered ? 1 : 0
+                    opacity: hovered ? 1 : 0,
+                    mixBlendMode: 'difference'
                   }}
                 />
               )}

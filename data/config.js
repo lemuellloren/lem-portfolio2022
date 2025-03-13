@@ -178,7 +178,10 @@ export const experience = {
   experiences: [
     {
       company: 'Harvey Norman',
-      description: 'An Australian based retail company',
+      description:
+        'Harvey Norman is an Australian multinational retailer of furniture, bedding, computers, communications and consumer electrical products.',
+      responsibilities:
+        'Collaborated with engineers, QA, and product managers to research, design, and develop internal online shopping applications using modern web technologies like React, GraphQL, Polaris, RemixJS, and Shopify. Ensured code quality through reviews and testing, maintained existing systems, and implemented efficient deployment processes.',
       year: 'March 2023 - Present',
       position: 'Software Engineer',
       link: 'https://www.harveynorman.com.au/',
@@ -186,7 +189,10 @@ export const experience = {
     },
     {
       company: 'Poplar Homes',
-      description: 'A Silicon Valley based PropTech company',
+      description:
+        'A Silicon Valley-based PropTech company that was recently acquired by Evernest.',
+      responsibilities:
+        'Collaborated closely with engineers, designers, QA, and product managers to research, design, and develop internal proptech products using modern web technologies like TypeScript, React, GraphQL, and NodeJS. Also, designed and developed marketing team websites using WordPress. Ensured product quality through testing and evaluation, maintained existing systems, and implemented efficient deployment processes.',
       year: 'April 2022 - November 2022',
       position: 'Junior Software Engineer',
       link: 'https://www.poplarhomes.com/',
@@ -194,7 +200,9 @@ export const experience = {
     },
     {
       company: 'ViewQwest',
-      description: 'A Singapore and Malaysia based ISP company',
+      description: 'An ISP company with operations in Singapore and Malaysia.',
+      responsibilities:
+        'Collaborated closely with engineers, business analysts, and product managers to research, design, and develop software products. Assisted in maintaining and supporting web applications and software, ensuring optimal performance and functionality. Created internal projects using modern web technologies like TypeScript, Angular, and VueJS. Developed websites, custom plugins, and integrated third-party solutions using WordPress for internal projects. Implemented efficient deployment processes to streamline development workflows.',
       year: 'September 2019 - April 2022',
       position: 'Software Engineer',
       link: 'https://viewqwest.com/',
@@ -202,7 +210,10 @@ export const experience = {
     },
     {
       company: 'Leet Digital',
-      description: 'A Sydney, Austalia based MarTech company',
+      description:
+        'A digital marketing and web development company based in Sydney, Australia.',
+      responsibilities:
+        'Designed, developed, tested, and deployed web applications using modern technologies such as VueJS, Kirby CMS, and WordPress. Specialized in WordPress development, including custom plugins and third-party integrations. Coordinated with designers and programmers to bring website concepts to life. Supported website upkeep and maintenance, collaborating with teams to format and deploy content. Prioritized user experience, implemented responsive design, and incorporated user feedback for continuous improvement. Stayed updated on industry trends and contributed to an innovative development culture.',
       year: 'November 2016 - September 2019',
       position: 'Web Developer',
       link: 'https://www.leetdigital.com/',
