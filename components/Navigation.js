@@ -41,12 +41,13 @@ export default function Navigation() {
       className="fixed top-0 left-0 w-full z-50 dark:bg-black bg-white shadow-sm"
     >
       <div className="p-6 md:p-8 m-auto w-full flex flex-wrap justify-between items-center">
-        <Link href="/." className="cursor-pointer" passHref>
+        <Link href="/." passHref>
           <Image
             src={`/static/logos/${isThemeLogo}`}
             alt="Lemuel"
             width={30}
             height={30}
+            className="cursor-pointer"
           />
         </Link>
 
