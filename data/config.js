@@ -25,7 +25,7 @@ export const hero = {
 export const about = {
   title: 'About',
   description:
-    'I build intuitive, visually engaging experiences with front-end development and UI/UX design, turning concepts into seamless, interactive websites.',
+    'I develop web applications and e-commerce solutions. I design and animate responsive websites. My goal is seamless, interactive digital experiences.',
 
   technologies: [
     {
