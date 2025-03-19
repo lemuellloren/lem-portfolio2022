@@ -3,7 +3,7 @@ import FlipInXText from './animated/FlipInXText';
 
 export const About = () => {
   return (
-    <section id="about-section" className="t-8 md:py-48">
+    <section id="aboutSection" className="t-8 md:py-48">
       <div className="flex items-center">
         <div className="flex flex-col md:flex-row w-full">
           <div className="md:w-1/4"></div>

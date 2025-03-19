@@ -12,7 +12,7 @@ export const Contact = () => {
         <ScrollVelocity
           texts={contact.titleVelocity}
           velocity={100}
-          className="lowercase text-2xl md:text-9xl font-normal p-2"
+          className=" text-2xl md:text-7xl font-normal p-2"
         />
       </div>
       <AnimatedContent {...defaultAnimationConfig}>

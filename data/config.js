@@ -173,7 +173,7 @@ export const projects = {
 };
 
 export const experience = {
-  title: 'Journey',
+  title: "Where I've Grown Professionally",
   desc: '',
   experiences: [
     {
@@ -240,7 +240,7 @@ export const stack = {
 
 export const contact = {
   title: 'Contact me',
-  titleVelocity: ['contact me •', "let's talk •"],
+  titleVelocity: ['Contact me •', "Let's talk •"],
   description: 'Curious? Start the conversation.',
   email: 'lemuelpaconlloren@gmail.com',
   github: 'lemuellloren',
@@ -250,7 +250,7 @@ export const contact = {
 
 export const footer = {
   title: 'Design & Development by Lemuel Lloren',
-  builtWith: 'Built with Next.js, Tailwind CSS, and React Framer Motion.',
+  builtWith: 'Built with Next.js, TailwindCSS, and React Framer Motion.',
   social: ['LinkedIn', 'Github', 'Dribbble']
 };
 

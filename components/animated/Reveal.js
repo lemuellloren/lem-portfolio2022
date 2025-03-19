@@ -13,7 +13,7 @@ export const Reveal = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      const element = document.getElementById('about-section');
+      const element = document.getElementById('aboutSection');
       if (element) {
         const rect = element.getBoundingClientRect();
         if (rect.top < window.innerHeight * 0.75) {

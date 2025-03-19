@@ -49,11 +49,11 @@ export const Experience = () => {
   };
 
   return (
-    <section>
+    <section className="max-w-6xl mx-auto">
       <AnimatedContent {...defaultAnimationConfig}>
         <FlipInXText
           as="h2"
-          className="md:mb-40 lowercase text-2xl md:text-9xl font-normal text-right"
+          className="md:mb-40 text-2xl md:text-7xl font-normal"
         >
           {experience.title}
         </FlipInXText>
@@ -78,10 +78,7 @@ export const Experience = () => {
                 className="flex justify-between py-14"
               >
                 <div className="text-left">
-                  <FlipInXText
-                    as="h2"
-                    className="text-xs md:text-7xl font-normal"
-                  >
+                  <FlipInXText as="h2" className="md:text-4xl font-normal">
                     {experience.company}
                   </FlipInXText>
 
@@ -110,7 +107,7 @@ export const Experience = () => {
 
           <motion.div
             ref={contentRef}
-            className="w-1/4 hidden md:block absolute top-0 left-0 bg-black dark:bg-white p-4 md:p-6 pointer-events-none transition-opacity duration-200 ease-in-out"
+            className="rounded-lg w-1/2 hidden md:block absolute top-0 left-0 bg-black dark:bg-white p-4 md:p-6 pointer-events-none transition-opacity duration-200 ease-in-out"
             style={{
               x: contentPos.x,
               y: contentPos.y,
@@ -130,7 +127,7 @@ export const Experience = () => {
                 {content.title}
               </h2>
             </div>
-            <p className="mt-8 font-sm font-normal text-white dark:text-black">
+            <p className="mt-8 font-sm font-normal text-white dark:text-black leading-normal">
               {content.description}
             </p>
             <ul className="list-none">
