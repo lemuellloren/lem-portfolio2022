@@ -65,34 +65,6 @@ export const projects = {
         'https://github.com/lemuellloren/healthcare-patient-management-system'
     },
     {
-      title: 'Homyz',
-      image: '/static/covers/cover-real-estate.png',
-      description: 'React, Next.js, Chakra UI, RapidAPI',
-      link: 'https://homyz-app.vercel.app/',
-      github: 'lemuellloren/modern-real-estate-app'
-    },
-    {
-      title: 'Owner Dashboard Renewal and Relisting',
-      image: '/static/covers/cover-rent.png',
-      description: 'PostgreSQL, Node.js, Express, React, TypeScript',
-      link: 'https://www.poplarhomes.com/login',
-      github: ''
-    },
-    {
-      title: 'ViewQwest',
-      image: '/static/covers/cover-internet.png',
-      description: 'WordPress, Elementor, Vue, TS, Laravel',
-      link: 'https://viewqwest.com/',
-      github: ''
-    },
-    {
-      title: 'Development Entrepreneurship',
-      image: '/static/covers/cover-help.png',
-      description: 'WordPress and Divi',
-      link: 'https://developmententrepreneurship.org/',
-      github: ''
-    },
-    {
       title: 'Javier Project Managers',
       image: '/static/covers/cover-interior.png',
       description: 'WordPress and Elementor',
@@ -114,6 +86,34 @@ export const projects = {
       github: ''
     },
     {
+      title: 'Homyz',
+      image: '/static/covers/cover-real-estate.png',
+      description: 'React, Next.js, Chakra UI, RapidAPI',
+      link: 'https://homyz-app.vercel.app/',
+      github: 'lemuellloren/modern-real-estate-app'
+    },
+    {
+      title: 'ViewQwest',
+      image: '/static/covers/cover-internet.png',
+      description: 'WordPress, Elementor, Vue, TS, Laravel',
+      link: 'https://viewqwest.com/',
+      github: ''
+    },
+    {
+      title: 'Owner Dashboard Renewal and Relisting',
+      image: '/static/covers/cover-rent.png',
+      description: 'PostgreSQL, Node.js, Express, React, TypeScript',
+      link: 'https://www.poplarhomes.com/login',
+      github: ''
+    },
+    {
+      title: 'Development Entrepreneurship',
+      image: '/static/covers/cover-help.png',
+      description: 'WordPress and Divi',
+      link: 'https://developmententrepreneurship.org/',
+      github: ''
+    },
+    {
       title: 'BearGrip ',
       image: '/static/covers/cover-gym.png',
       description: 'Shopify',
@@ -128,6 +128,13 @@ export const projects = {
       github: ''
     },
     {
+      title: 'APS Double Glazing',
+      image: '/static/covers/cover-aps.png',
+      description: 'Figma, WordPress, and WPBakery',
+      link: 'https://apsdoubleglazing.com.au/',
+      github: ''
+    },
+    {
       title: 'TechRemote',
       image: '/static/covers/cover-remote.png',
       description: 'WordPress and Divi',
@@ -135,10 +142,10 @@ export const projects = {
       github: ''
     },
     {
-      title: 'Consuelo ',
-      image: '/static/covers/cover-educ.png',
-      description: 'WordPress and Divi',
-      link: 'https://consuelo.org/',
+      title: 'Broken Ballerina',
+      image: '/static/covers/cover-balerina.png',
+      description: 'WordPress and WPBakery',
+      link: 'https://brokenballerina-inc.com.au/',
       github: ''
     },
     {
@@ -149,6 +156,20 @@ export const projects = {
       github: ''
     },
     {
+      title: 'Forebode',
+      image: '/static/covers/cover-forebode.png',
+      description: 'WordPress and WPBakery',
+      link: 'https://forebode.com.au/',
+      github: ''
+    },
+    {
+      title: 'Consuelo ',
+      image: '/static/covers/cover-educ.png',
+      description: 'WordPress and Divi',
+      link: 'https://consuelo.org/',
+      github: ''
+    },
+    {
       title: 'CODE-NGO',
       image: '/static/covers/cover-ngo.png',
       description: 'WordPress and Divi',
@@ -156,7 +177,7 @@ export const projects = {
       github: ''
     },
     {
-      title: 'Van Damme Plant Hire ',
+      title: 'Van Damme Plant Hire',
       image: '/static/covers/cover-hire.png',
       description: 'Figma, WordPress, and WPBakery',
       link: 'https://vandammeph.com.au/',

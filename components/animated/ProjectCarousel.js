@@ -46,7 +46,7 @@ const ProjectCarousel = () => {
       >
         {projects.projects.map((project, index) => {
           const projectLink = project.link || project.github;
-          const projectLinkText = project.link ? 'View Site' : 'View Code';
+          const projectLinkText = project.link ? 'View Project' : 'View Code';
 
           return (
             <SplideSlide key={index}>
