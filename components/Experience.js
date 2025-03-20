@@ -53,7 +53,7 @@ export const Experience = () => {
       <AnimatedContent {...defaultAnimationConfig}>
         <FlipInXText
           as="h2"
-          className="md:mb-40 text-2xl md:text-7xl font-normal"
+          className="md:mb-40 text-2xl md:text-7xl font-normal text-left md:text-center"
         >
           {experience.title}
         </FlipInXText>

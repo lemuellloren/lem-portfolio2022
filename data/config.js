@@ -29,7 +29,7 @@ export const about = {
 
   technologies: [
     {
-      header: 'Web and Software Development',
+      header: 'Full Stack Development',
       description:
         'Building fast, dynamic web apps with React, Next.js, and Node.js, ensuring seamless and engaging user experiences.'
     },
@@ -46,7 +46,7 @@ export const about = {
     {
       header: 'UI/UX and Animations',
       description:
-        'I design in Figma, develop websites, and enhance them with React Framer Motion & GSAP animations.'
+        'I design in Figma and handle the development. I also integrate React Framer Motion and GSAP animations into specific projects.'
     }
   ]
 };
