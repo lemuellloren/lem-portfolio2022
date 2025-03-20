@@ -21,10 +21,11 @@ const RotatingText = ({
       <AnimatePresence mode="wait">
         <motion.span
           key={positions[index]}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
+          initial={{ rotateX: 90, opacity: 0 }}
+          animate={{ rotateX: 0, opacity: 1 }}
+          exit={{ rotateX: -90, opacity: 0 }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
+          style={{ display: 'inline-block', transformOrigin: 'center' }}
           className={spanClassName}
         >
           {positions[index]}
