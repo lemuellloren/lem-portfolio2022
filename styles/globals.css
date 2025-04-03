@@ -51,6 +51,10 @@ ul {
   list-style: decimal;
 }
 
+::selection {
+ @apply bg-lemon text-black;
+}
+
 /* .landingSectionTitle::before {
   content: '';
   position: absolute;

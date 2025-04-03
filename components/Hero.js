@@ -38,11 +38,9 @@ export default function Hero() {
             />
           </span>
         </FlipInXText>
-
-        <RotatingText
-          positions={hero.position}
-          className="md:text-4xl font-normal"
-        />
+        <FlipInXText as="p" className="text-2xl md:max-w-md">
+          {hero.subTitle}
+        </FlipInXText>
         <AnimatedContent {...defaultAnimationConfig}>
           <div className="pt-10 pb-12 flex gap-4">
             <HoverTextButton
@@ -52,7 +50,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               background={true}
             >
-              About me
+              Learn more
             </HoverTextButton>
             <HoverTextButton
               as="a"

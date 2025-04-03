@@ -10,7 +10,9 @@ export const meta = {
 };
 
 export const hero = {
-  title: 'Lemuel Lloren',
+  title: 'Lemuel Lloren,',
+  subTitle:
+    'driven by functional and visual design, is a designer and developer.',
   profile: '/static/profile.png',
   isActive: false,
   position: ['Software Engineer', 'Web Enthusiast', 'Hobbyist Designer'],
@@ -24,8 +26,8 @@ export const hero = {
 
 export const about = {
   title: 'About',
-  description: 'I build interactive web and e-commerce experiences.',
-
+  description:
+    'I love creating interactive web and e-commerce experiences that connect with users.',
   technologies: [
     {
       header: 'Full Stack Development',

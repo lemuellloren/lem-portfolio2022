@@ -29,7 +29,7 @@ const ProjectCarousel = () => {
           type: 'loop',
           drag: 'free',
           perPage: 3,
-          gap: '1rem',
+          gap: '0.5rem',
           pagination: false,
           arrows: false,
           autoScroll: {
@@ -51,7 +51,7 @@ const ProjectCarousel = () => {
           return (
             <SplideSlide key={index}>
               <div
-                className="relative group overflow-hidden"
+                className="relative group overflow-hidden border-[.4px] dark:border-gray-800 border-[#e8e8e8] bg-white dark:bg-zinc-900 rounded-lg cursor-pointer p-2"
                 onMouseMove={(e) => handleMouseMove(e, index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >

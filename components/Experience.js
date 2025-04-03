@@ -107,41 +107,43 @@ export const Experience = () => {
 
           <motion.div
             ref={contentRef}
-            className="rounded-lg w-1/2 hidden md:block absolute top-0 left-0 bg-lemon p-4 md:p-6 pointer-events-none transition-opacity duration-200 ease-in-out"
+            className="rounded-lg w-1/2 hidden md:block absolute top-0 left-0 bg-white dark:bg-zinc-900 p-2 pointer-events-none transition-opacity duration-200 ease-in-out"
             style={{
               x: contentPos.x,
               y: contentPos.y,
               opacity: content.opacity
             }}
           >
-            <div className="flex flex-row items-center gap-4">
-              {content.logo && (
-                <Image
-                  src={content.logo}
-                  alt="Company Logo"
-                  width={40}
-                  height={40}
-                />
-              )}
-              <h2 className="md:text-4xl font-normal text-black dark:text-black">
-                {content.title}
-              </h2>
+            <div className="border-[.4px] border-[#e8e8e8] dark:border-gray-800 p-2 rounded-lg bg-lemon">
+              <div className="flex flex-row items-center gap-4">
+                {content.logo && (
+                  <Image
+                    src={content.logo}
+                    alt="Company Logo"
+                    width={40}
+                    height={40}
+                  />
+                )}
+                <h2 className="md:text-4xl font-normal text-black dark:text-black">
+                  {content.title}
+                </h2>
+              </div>
+              <p className="mt-8 font-sm font-normal text-black dark:text-black leading-normal">
+                {content.description}
+              </p>
+              <ul className="list-none">
+                <li>
+                  <p className="mt-8 font-sm font-bold text-black dark:text-black">
+                    Responsibilities:
+                  </p>
+                </li>
+                <li>
+                  <p className="text-xs md:text-sm font-normal text-black dark:text-black">
+                    {content.responsibilities}
+                  </p>
+                </li>
+              </ul>
             </div>
-            <p className="mt-8 font-sm font-normal text-black dark:text-black leading-normal">
-              {content.description}
-            </p>
-            <ul className="list-none">
-              <li>
-                <p className="mt-8 font-sm font-bold text-black dark:text-black">
-                  Responsibilities:
-                </p>
-              </li>
-              <li>
-                <p className="text-xs md:text-sm font-normal text-black dark:text-black">
-                  {content.responsibilities}
-                </p>
-              </li>
-            </ul>
           </motion.div>
         </div>
       </AnimatedContent>
