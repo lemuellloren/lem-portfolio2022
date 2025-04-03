@@ -50,7 +50,7 @@ export default function Hero() {
               href="#aboutSection"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-black rounded-lg dark:bg-zinc-900 text-white p-5"
+              background={true}
             >
               About me
             </HoverTextButton>

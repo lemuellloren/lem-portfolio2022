@@ -49,7 +49,7 @@ export const Experience = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto">
+    <section className="max-w-5xl mx-auto">
       <AnimatedContent {...defaultAnimationConfig}>
         <FlipInXText
           as="h2"
@@ -107,7 +107,7 @@ export const Experience = () => {
 
           <motion.div
             ref={contentRef}
-            className="rounded-lg w-1/2 hidden md:block absolute top-0 left-0 bg-black dark:bg-white p-4 md:p-6 pointer-events-none transition-opacity duration-200 ease-in-out"
+            className="rounded-lg w-1/2 hidden md:block absolute top-0 left-0 bg-lemon p-4 md:p-6 pointer-events-none transition-opacity duration-200 ease-in-out"
             style={{
               x: contentPos.x,
               y: contentPos.y,
@@ -123,21 +123,21 @@ export const Experience = () => {
                   height={40}
                 />
               )}
-              <h2 className="md:text-4xl font-normal text-white dark:text-black">
+              <h2 className="md:text-4xl font-normal text-black dark:text-black">
                 {content.title}
               </h2>
             </div>
-            <p className="mt-8 font-sm font-normal text-white dark:text-black leading-normal">
+            <p className="mt-8 font-sm font-normal text-black dark:text-black leading-normal">
               {content.description}
             </p>
             <ul className="list-none">
               <li>
-                <p className="mt-8 font-sm font-bold text-white dark:text-black">
+                <p className="mt-8 font-sm font-bold text-black dark:text-black">
                   Responsibilities:
                 </p>
               </li>
               <li>
-                <p className="text-xs md:text-sm font-normal text-white dark:text-black">
+                <p className="text-xs md:text-sm font-normal text-black dark:text-black">
                   {content.responsibilities}
                 </p>
               </li>

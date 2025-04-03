@@ -38,7 +38,7 @@ export default function Navigation() {
   return (
     <nav
       id="mainNav"
-      className="fixed top-0 left-0 w-full z-50 dark:bg-black bg-white shadow-sm"
+      className="fixed top-0 left-0 w-full z-50 dark:bg-black bg-gray94 shadow-sm"
     >
       <div className="p-6 md:p-8 m-auto w-full flex flex-wrap justify-between items-center">
         <Link href="/." passHref>

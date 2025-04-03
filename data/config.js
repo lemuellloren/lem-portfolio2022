@@ -24,8 +24,7 @@ export const hero = {
 
 export const about = {
   title: 'About',
-  description:
-    'I develop web applications and e-commerce solutions. I design and animate responsive websites. My goal is seamless, interactive digital experiences.',
+  description: 'I build interactive web and e-commerce experiences.',
 
   technologies: [
     {
@@ -194,7 +193,7 @@ export const projects = {
 };
 
 export const experience = {
-  title: "Where I've Grown Professionally",
+  title: 'Professional Growth',
   desc: '',
   experiences: [
     {

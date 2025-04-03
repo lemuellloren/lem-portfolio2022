@@ -10,7 +10,9 @@ module.exports = {
       colors: {
         dark: '#000',
         white: '#fff',
-        lightText: '#76797d'
+        lightText: '#76797d',
+        lemon: '#baff00',
+        gray94: '#f0f0f0'
       },
       keyframes: {
         flipInX: {

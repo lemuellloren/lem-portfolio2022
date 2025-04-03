@@ -1,10 +1,9 @@
 'use client';
 
-import { contact, defaultAnimationConfig, footer } from '@/data/config';
+import { contact, footer } from '@/data/config';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import HoverTextButton from './animated/HoverTextButton';
-import AnimatedContent from './animated/AnimatedContent';
 import FlipInXText from './animated/FlipInXText';
 
 const Footer = () => {
@@ -48,13 +47,13 @@ const Footer = () => {
 
           {isHovered && (
             <motion.div
-              className="hidden md:block absolute bottom-full mb-2 p-3 bg-black dark:bg-white  shadow-lg rounded-md text-sm"
+              className="hidden md:block absolute bottom-full mb-2 p-3 bg-lemon rounded-md text-sm"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 10 }}
               transition={{ duration: 0.2 }}
             >
-              <p className="text-xs md:text-sm text-white dark:text-black">
+              <p className="text-xs md:text-sm text-black dark:text-black">
                 {footer.builtWith}
               </p>
             </motion.div>
