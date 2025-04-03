@@ -10,9 +10,9 @@ export const meta = {
 };
 
 export const hero = {
-  title: 'Lemuel Lloren,',
+  title: 'Lemuel Lloren',
   subTitle:
-    'driven by functional and visual design, is a designer and developer.',
+    'Driven by functional and visual design, I work as a designer and developer.',
   profile: '/static/profile.png',
   isActive: false,
   position: ['Software Engineer', 'Web Enthusiast', 'Hobbyist Designer'],

@@ -38,7 +38,7 @@ export default function Hero() {
             />
           </span>
         </FlipInXText>
-        <FlipInXText as="p" className="text-2xl md:max-w-md">
+        <FlipInXText as="p" className="text-2xl md:max-w-xl">
           {hero.subTitle}
         </FlipInXText>
         <AnimatedContent {...defaultAnimationConfig}>
