@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect, useState } from 'react';
+import { useRef, useLayoutEffect, useState, useEffect } from 'react';
 import {
   motion,
   useScroll,
@@ -11,8 +11,11 @@ import {
 
 function useElementWidth(ref) {
   const [width, setWidth] = useState(0);
+  const isClient = typeof window !== 'undefined';
 
-  useLayoutEffect(() => {
+  const useSafeLayoutEffect = isClient ? useLayoutEffect : useEffect;
+
+  useSafeLayoutEffect(() => {
     function updateWidth() {
       if (ref.current) {
         setWidth(ref.current.offsetWidth);
