@@ -115,10 +115,24 @@ export const projects = {
       github: ''
     },
     {
-      title: 'BearGrip ',
+      title: 'Roaming Healthcare',
+      image: '/static/covers/cover-roaming.png',
+      description: 'Kriby CMS',
+      link: 'https://roaming.healthcare/',
+      github: ''
+    },
+    {
+      title: 'BearGrip',
       image: '/static/covers/cover-gym.png',
       description: 'Shopify',
       link: 'https://beargrip.co.uk/',
+      github: ''
+    },
+    {
+      title: 'EnCapsulator',
+      image: '/static/covers/cover-encaps.png',
+      description: 'Kriby CMS',
+      link: 'https://encapsulator.io/',
       github: ''
     },
     {
