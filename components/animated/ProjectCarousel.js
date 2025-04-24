@@ -85,7 +85,7 @@ const ProjectCarousel = () => {
                   )}
                 </AnimatePresence>
               </div>
-              <p>{project.title}</p>
+              <p>{project.description}</p>
             </SplideSlide>
           );
         })}

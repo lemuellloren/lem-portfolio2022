@@ -96,7 +96,7 @@ export const projects = {
     {
       title: 'ViewQwest',
       image: '/static/covers/cover-internet.png',
-      description: 'WordPress, Elementor, Vue, TS, Laravel',
+      description: 'WordPress, Elementor, Vue, Typescript, Laravel',
       link: 'https://viewqwest.com/',
       github: ''
     },
@@ -117,7 +117,7 @@ export const projects = {
     {
       title: 'Roaming Healthcare',
       image: '/static/covers/cover-roaming.png',
-      description: 'Kriby CMS',
+      description: 'Kriby CMS and PHP',
       link: 'https://roaming.healthcare/',
       github: ''
     },
@@ -131,7 +131,7 @@ export const projects = {
     {
       title: 'EnCapsulator',
       image: '/static/covers/cover-encaps.png',
-      description: 'Kriby CMS',
+      description: 'Kriby CMS and PHP',
       link: 'https://encapsulator.io/',
       github: ''
     },
@@ -276,12 +276,13 @@ export const stack = {
 
 export const contact = {
   title: 'Contact me',
-  titleVelocity: ['Contact me •', "Let's talk •"],
+  titleVelocity: ['Contact me •'],
   description: 'Curious? Start the conversation.',
   email: 'lemuelpaconlloren@gmail.com',
   github: 'lemuellloren',
   dribbble: 'Lemuel',
-  linkedin: 'lemuel-lloren'
+  linkedin: 'lemuel-lloren',
+  logos: ['/static/logos/logo-type.svg', '/static/logos/logo-type-revert.svg']
 };
 
 export const footer = {
