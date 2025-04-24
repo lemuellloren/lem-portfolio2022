@@ -3,8 +3,6 @@ import { Moon, Sun } from 'lucide-react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
-import AnimatedContent from './animated/AnimatedContent';
-import { defaultAnimationConfig } from '@/data/config';
 import FlipInXText from './animated/FlipInXText';
 
 export default function Navigation() {

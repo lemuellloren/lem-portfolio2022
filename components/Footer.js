@@ -10,10 +10,10 @@ const Footer = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <footer className="mt-20 relative">
+    <footer className="relative">
       <div className="md:flex justify-between items-center gap-4">
         {footer.social && (
-          <div className="grid grid-cols-5 md:grid-cols-3 gap-4">
+          <div className="flex justify-around gap-4">
             {footer.social.map((platform, index) => {
               const lowerCasePlatform = platform.toLowerCase();
               const link = `https://${lowerCasePlatform}.com/${contact[lowerCasePlatform]}`;
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         )}
 
-        <div className="relative flex flex-col md:items-center">
+        <div className="relative flex flex-col items-center">
           <p
             className="mt-8 md:mt-0 text-xs md:text-base font-light text-left md:text-right cursor-pointer"
             onMouseEnter={() => setIsHovered(true)}
