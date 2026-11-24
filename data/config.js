@@ -58,6 +58,14 @@ export const projects = {
   scrollVelocityTexts: ['selected projects •', 'digital creations •'],
   projects: [
     {
+      title: 'Kurot Smart Envelope Budgeting App',
+      image: '/static/covers/cover-kurot.png',
+      description:
+        'Next.js, Zustand, Capacitor, Chart.js, TypeScript, TailwindCSS',
+      link: 'https://kurot-sigma.vercel.app/',
+      github: 'https://github.com/lemuellloren/kurot-app'
+    },
+    {
       title: 'CarePulse Patient Management System',
       image: '/static/covers/cover-healthcare.png',
       description: 'Next.js, Appwrite, Twilio, TypeScript, TailwindCSS',
